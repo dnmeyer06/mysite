@@ -376,9 +376,32 @@ header .site-title {
   .nav-menu a {
     font-size: 15px;
   }
-  header .site-title {
-    line-height: 24px;
+  nav {
+    width: 75%;
+    float: right;
+    padding: 0;
+  }
+   header nav a li {
+    line-height: 42px;
     font-size: 15px;
+    height: 42px;
+    text-align: center;
+  }
+  header nav a  {
+    height: 100%;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+  header .site-title {
+    line-height: 42px;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
 }
 
