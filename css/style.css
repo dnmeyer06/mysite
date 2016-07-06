@@ -107,7 +107,7 @@ header li {
   font-weight: 300;
   background: hsla(200, 35%, 34%, 0.7);
   text-align: right;
-  z-index:1000;
+  z-index: 10;
 }
 
 header nav a:hover {
@@ -133,38 +133,6 @@ header .site-title {
 /*LANDING*/
 
 
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px);
-}
-
-.backG {
-  box-sizing: border-box;
-  background-image: url(../img/background3.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 200px;
-  padding: 0;
-  height: 100vh;
-  width: 100%;
-  perspective: 60px;
-  position: static;
-}
 
 .landing {
   box-sizing: border-box;
@@ -173,12 +141,10 @@ header .site-title {
   padding: 100px;
   height: 100vh;
   width: 100%;
-  perspective: 60px;
+  background-image: url(../img/background3.jpg);
+  background-position: center;
+  background-size: cover;
 
-}
-
-.parallax-window {
-    background: transparent;
 }
 
 .landing-content {
