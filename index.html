@@ -2,33 +2,36 @@
   <head>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,300,200' rel='stylesheet' type='text/css'>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Daniel Meyer's Website</title>
   </head>
   <body>
     <section id="top">
-      <div class="landing vertical-align-parent">
-        <header>
+    <div class="backG parallax__layer--back">
+      <div class="landing vertical-align-parent parallax__layer--base">
+        <header class= "fadeNav">
           <a href="#top" class="site-title smoothScroll">Daniel Meyer</a>
           <nav>
             <ul class="nav-menu">
-              <a href="#about" class="smoothScroll aboutheader"><li>About</li></a>
-              <a href="#photo" class="smoothScroll photoheader"><li>Photography</li></a>
-              <a href="#design" class="smoothScroll designheader"><li>Design</li></a>
-              <a href="#contact" class="smoothScroll contactheader"><li>Contact</li></a>
+              <a href="#about" class="smoothScroll aboutheader fade6"><li>About</li></a>
+              <a href="#photo" class="smoothScroll photoheader fade7"><li>Photography</li></a>
+              <a href="#design" class="smoothScroll designheader fade8"><li>Design</li></a>
+              <a href="#contact" class="smoothScroll contactheader fade9"><li>Contact</li></a>
             </ul>
           </nav>
         </header>
         <div class="landing-content vertical-align-child">
-          <h1>I was born on the side of the highway, been traveling ever since.</h1>
-          <div class="break"></div>
-          <h2>I am an aspiring web designer and photographer, I've compiled a
+        <div class="landCont">
+          <h1 class = "fade">I was born on the side of the highway,</h1>
+          <h1 class="fade2">been traveling ever since.</h1>
+          </div>
+          <div class="break fade3"></div>
+          <h2 class = "fade4">I am an aspiring web designer and photographer, I've compiled a
             portfolio of my work. Please use the contact info at the bottom of
             the page to reach out regarding potential projects.</h2>
         </div>
+      </div>
       </div>
     </section>
     <section id="about">
@@ -182,5 +185,9 @@
         </ul>
       </div>
     </section>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/parallax.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
