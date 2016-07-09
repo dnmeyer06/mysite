@@ -1,0 +1,499 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+	background: #ededed;
+
+}
+
+#logo {
+	padding: 8px;
+}
+
+#logo a img {
+	width: 80px;
+}
+
+#logo_nav {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px;
+}
+
+#nav li {
+	margin: 2.3em 1em;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+#nav li a {
+	font-size: 1em;
+}
+
+#logo_nav > .mobileonly,
+.mobileonly {display: none;}
+
+/*
+::::::::::::::::
+::: HOME ::::
+::::::::::::::::
+*/
+
+.body_ #logo_nav {
+	position: relative;
+}
+
+
+
+.body_ h2 { 
+	margin-top: 150px;
+	margin-bottom: 20px; }
+
+h1 {font-size: 6em;}
+
+h2#tagline {
+	margin: 300px 0 0 0 ;
+	opacity: 0;
+	color: white;
+	text-shadow: rgba(0, 0, 0, 0.14902) 0px 2px 1px;
+}
+
+
+.body_ #intro{
+	/*
+	the height of this div determines how long the scroll is.
+	Make sure to also edit the JS
+	*/
+	height:500px;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:194;
+}
+
+#overlaid{
+	/*
+	This is the image that fades in
+	*/
+	background-image:  url(http://resilientcoders.s3.amazonaws.com/i/hero2.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: 50% 0 ;
+	background-attachment: fixed;
+	color: white;
+	height: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+}
+
+#underlaid{
+	/*
+	This is the bottom image
+	*/
+	z-index:1;
+	background-image:  url(http://resilientcoders.s3.amazonaws.com/i/hero1.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: 50% 0 ;
+	background-attachment: fixed;	color: white;
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+.body_ .container, .container_home {
+	width: 100%;
+	margin: 0;
+}
+
+.body_ section {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.body_ #header section {
+	text-align: left;
+}
+
+.body_ #header {
+	width: 70%;
+	background: white;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	background: transparent;
+	z-index: 4;
+}
+
+.body_ #tier2 {
+	float: left;
+	text-align: center;
+	width: 100%;
+	padding: 0 0 80px 0;
+	z-index: 3;
+	background: #efefef;
+
+}
+
+.body_ #tier2 * {
+
+}
+
+.formsection {
+	text-align: center;
+}
+
+.formsection h2 {
+	margin-top: 50px;
+}
+
+.body_ #tier3 {
+	padding: 0px;
+  background: #333;
+  color: #f7f7f7;
+  float: left;
+}
+
+
+.body_ #tier3 h2 {
+	margin: 0 0 80px 0;
+}
+
+#footer_home .footer {
+
+}
+
+.body_ .footer {
+	background: #333;
+	color: #ccc;
+	padding-top: 40px;
+}
+
+
+/*
+::::::::::::::::
+::: PAGES ::::
+::::::::::::::::
+*/
+
+.image-container {
+	height: 550px;
+	width: 100%;
+	z-index: -1;
+	float: left;
+}
+
+
+.container,
+.container800 {
+	margin: 0px auto;
+	text-align: center;
+	width: 800px;
+	padding: 40px 0 80px 0;
+
+}
+
+/*
+.hero {
+	height: 400px;
+	margin: 80px auto 0 auto;
+}
+*/
+
+.body_students .hero { background-image: url(https://resilientcoders.s3.amazonaws.com/i/teep_lj.png);}
+.body_you .hero { background-image: url(https://resilientcoders.s3.amazonaws.com/i/teep_ed.png);}
+.body_partners .hero { background-image: url(https://resilientcoders.s3.amazonaws.com/i/tugg.jpg);}
+.body_team .hero {background-image: url(https://resilientcoders.s3.amazonaws.com/i/hoc.JPG);}
+.body_lab .hero {background-image: url(https://resilientcoders.s3.amazonaws.com/i/julio.jpg);}
+.body_lab .hero2 {background-image: url(https://pbs.twimg.com/media/CknuiH8UoAAC1FU.jpg);}
+.body_badges .hero {background-image: url(https://resilientcoders.s3.amazonaws.com/i/ackeempaul.jpg);}
+.body_job .hero {background-image: url(https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/willdandevin1200.jpg);}
+.body_alumni .hero {background-image: url(https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/dedricworking.jpg);}
+.body_bootcamp .hero {background-image: url(https://resilientcoders.s3.amazonaws.com/i/bootcamp2016a/lawrence_1200.jpg);}
+
+
+.body_roadmap .hero { height: 60px;}
+
+.bg_mark {	background-image: url("/i/camp_mark.jpg"); }
+.body_program .hero,
+.bg_kunle {	background-image: url("/i/camp_kunle.JPG"); }
+.body_donate .hero {	background-image: url("/i/Ben_Kenobi.png"); }
+.bg_micah {	background-image: url("https://resilientcoders.s3.amazonaws.com/i/donate/micah_bw.jpg"); }
+.bg_coworking {
+	background-image: url("https://resilientcoders.s3.amazonaws.com/i/donate/leanstartup.png"); }
+
+
+
+
+/*
+::::::::::::::::
+::: ROADMAP ::::
+::::::::::::::::
+*/
+
+.body_roadmap h4,
+.body_roadmap .product ul {
+	float: left;
+	width: 46%;
+	display:block;
+}
+
+.body_roadmap h4 {
+	text-align: right;
+	margin: 0 4% 0 0;
+	line-height: 1.6em;
+}
+
+/*
+::::::::::::::::
+::: Team ::::
+::::::::::::::::
+*/
+
+.body_team .team li a,
+.body_team .team li a.unselected,
+.body_team .team li a:hover,
+.body_team .team li a:hover.unselected {
+	width: 48%;
+	border: 1px solid transparent;
+}
+
+.body_lab .team li a,
+.body_lab .team li a.unselected,
+.body_lab .team li a:hover,
+.body_lab .team li a:hover.unselected {
+	width: 48%;
+	border: 0;
+}
+
+.body_alumni .team li a,
+.body_alumni .team li a.unselected,
+.body_alumni .team li a:hover,
+.body_alumni .team li a:hover.unselected {
+	width: 30%;
+	border: 1px solid transparent;
+}
+
+.body_team #tier2,
+.body_alumni #tier2 {
+	margin-top: 90px;
+}
+
+.team ul{ width: 30%; }
+
+.team_writeup {
+	float: left;
+	text-align: left;
+	padding: 80px 0 0 30px;
+	width: 60%;
+}
+
+.body_alumni .team ul{ width: 50%; }
+
+.body_alumni .team_writeup {
+	float: left;
+	text-align: left;
+	padding: 80px 0 0 30px;
+	width: 40%;
+}
+
+/*
+::::::::::::::::
+::: Lab ::::
+::::::::::::::::
+*/
+
+.body_lab .team {
+	background-color: #fff;
+}
+
+.casestudy_img, .casestudy_txt {
+	display:inline-block;
+	width:49.75%;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.casestudy_txt {
+	padding: 80px 20px 0 20px;
+}
+
+.casestudy_img {
+	background-size: cover;
+	display:inline-block;
+}
+
+/*
+Killing this for now...
+.casestudy_img#wanderu { background-image: url(https://resilientcoders.s3.amazonaws.com/i/lab/Wanderu_website.jpg);}
+.casestudy_img#resilientmap { background-image: url(https://resilientcoders.s3.amazonaws.com/i/lab/map.png);}
+*/
+
+.body_lab .team_writeup {
+	padding: 0px;
+	width: 70%;
+}
+
+/*
+::::::::::::::::
+::: Donate ::::
+::::::::::::::::
+*/
+
+
+.body_donate .intro {
+	border-bottom: 0px;
+}
+
+.body_donate .container ul li {
+  display:inline-block;
+  width: 49%;
+}
+
+.spacer {
+	width:100%;
+	background: #f7f7f7;
+	float: left;
+	padding: 0 0 100px 0;
+}
+
+.spacer_images {
+	width:100%; height: 400px; float: left;
+}
+
+.body_donate .container {
+
+}
+
+.body_donate #tier2 img,
+.body_donate #tier2 p.lorenzo_andre {
+	float: left;
+}
+
+.body_donate #tier2 img {
+	/*
+	width: 40%;
+	margin: 0 5% 0 0;
+	border: 8px solid white;
+	*/
+}
+
+.body_donate #tier2 p.lorenzo_andre {
+	width: 50%;
+}
+
+.donate-button, input[type="submit"].donate-button{
+	width: 38%;
+	padding: 5%;
+}
+
+form .donate-button, form input[type="submit"].donate-button{
+	width: 90%;
+	padding: 5%;
+}
+.donate-button:first-child {
+	margin: 0 1% 0 0;
+}
+
+.left50, .right50 {
+	float: left;
+}
+
+.left50 {width: 50%;}
+
+.right50 {
+	width:45%;
+	margin-left: 5%;
+}
+
+.main-header {
+height: 100%;
+}
+
+.main-header .row-fluid {
+height: 100%;
+}
+.main-header section {
+display: table-cell;
+vertical-align: middle;
+}
+.fullheightwidth {
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+/*
+::::::::::::::::
+::: Camp :::::::
+::::::::::::::::
+*/
+
+.body_camp section:first-of-type h2 {
+	margin: 1.6em 0;
+}
+
+.body_camp h2 {
+	margin: 0;
+}
+
+
+
+/*
+:::::::::::::::
+:: MICAH VIDEO
+:::::::::::::::
+*/
+
+#micahvideo iframe {width: 500px; height: 281px;}
+
+#micahvideo #video {
+	left: 50%;
+	margin-left:-250px;
+}
+
+/*
+::::::::::::::::
+:::: Badges ::::
+::::::::::::::::
+*/
+
+.content_2col div { width: 44%;}
+.content_2col div:first-of-type {
+  margin-right: 2%;
+}
+
+/*
+::::::::::::::::
+::: NEWS ::::
+::::::::::::::::
+*/
+
+.body_news section {
+  width: 49%;
+}
+
+.body_news section:nth-of-type(1) {
+  margin-right: 1%;
+}
