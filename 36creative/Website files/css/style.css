@@ -1,0 +1,86 @@
+
+@font-face {
+	font-family: 'AvenirNext';
+	/*src: url('../font/AvenirNextLTPro-Bold.otf');*/
+	src: url('../font/AvenirNextLTPro-Regular.otf');
+	/*src: url('../AvenirNextLTPro-BoldCnIt.otf');
+	src: url('../AvenirNextLTPro-Cn.otf');
+	src: url('../AvenirNextLTPro-CnIt.otf');
+	src: url('../font/AvenirNextLTPro-Demi.otf');
+	src: url('../font/AvenirNextLTPro-DemiCn.otf');
+	src: url('../font/AvenirNextLTPro-DemiCnIt.otf');
+	src: url('../font/AvenirNextLTPro-DemiIt.otf');
+	src: url('../font/AvenirNextLTPro-HeavyCn.otf');
+	src: url('../font/AvenirNextLTPro-HeavyCnIt.otf');
+	src: url('../font/AvenirNextLTPro-It.otf');
+	src: url('../font/AvenirNextLTPro-MediumCn.otf');
+	src: url('../font/AvenirNextLTPro-MediumCnIt.otf');
+	src: url('../font/AvenirNextLTPro-UltLtCn.otf');
+	src: url('../font/AvenirNextLTPro-UltLtCnIt.otf');*/
+}
+
+@font-face {
+	font-family: 'BrandonGro';
+	src: url('../font/Brandon_med.otf');
+}
+
+body {
+	background-image: url(../images/36background.jpg);
+	background-size: cover;
+	background-position: right;
+	font-family: 'AvenirNext', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #111;
+}
+
+.content, .logo {
+	width: 704px;
+	margin: auto;
+}
+
+.logo h1 {
+	font-family: 'BrandonGro';
+	font-weight: 500;
+	display: block;
+	font-size: 42.5px;
+	letter-spacing: 15.93;
+	text-transform: uppercase;
+	margin-top: 192px;
+	text-align: left;
+	border-top: black solid 1px;
+}
+
+.content h1 {
+	font-weight: 300;
+	text-align: left;
+	text-transform: uppercase;
+	padding: 40 0 10 0;
+	font-family: 'BrandonGro';
+	font-size: 26px;
+	letter-spacing: 7.8px;
+	box-sizing: content-box;
+}
+
+
+p {
+	list-style-type: none;
+	text-align: left;
+	line-height: 27px;
+	font-weight: 400;
+}
+
+.menuSec a {
+	font-size: 36px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 5.76px;
+	color: black;
+	display: inline-block;
+	transition-duration: 1s;
+	padding: 10 0 10 0;
+}
+
+.menuSec a:hover {
+	border-bottom: solid 2px black;
+}

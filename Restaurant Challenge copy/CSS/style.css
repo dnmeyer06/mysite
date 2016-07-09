@@ -1,0 +1,243 @@
+body {
+font-family         : 'Open Sans', sans-serif;
+background          : white;
+margin              : 0;
+}
+
+
+/*LANDING SECTION*/
+
+.landing {
+background          : linear-gradient(
+							rgba(41, 39, 39, 0.88),        
+							rgba(41, 39, 39, 0.88)),  
+							url(../Images/brazil.jpeg);
+	
+background-size     : cover;
+background-position : center;
+height              : 100vh;
+}
+
+nav {
+z-index             : 100;
+padding             : 0;
+font-weight         : 300;
+display             : block;
+position            : fixed;
+width               : 100%;
+background          : rgba(41, 39, 39, 0.88);
+}
+
+.logoContainer {
+position            : absolute;
+top                 : 35%;
+display             : block;
+width               : 100%;
+text-align          : center;
+}
+
+.logo {
+font-size           : 7em;
+text-align          : center;
+display             : inline-block;
+margin-top          : 0;
+margin-bottom       : 0;
+padding             : 0 20px 0 20px;
+font-weight         : 300;
+color               : white;
+border              : solid 2px white;
+}
+
+.logoSubContainer {
+position            : absolute;
+top                 : 50%;
+display             : block;
+width               : 100%;
+text-align          : center;
+margin-top          : 50px;
+}
+
+.logoSubBack {
+display             : inline-block;
+color               : white;
+border              : solid 1px white;
+}
+
+.logoSub {
+font-size           : 2em;
+font-weight         : 300;
+margin              : 0;
+padding             : 30px;
+}
+
+
+ul {
+list-style-type     : none;
+padding             : 0;
+margin              : 0;
+text-align          : center;
+display             : block;
+width               : 100%;
+}
+
+.menu {
+text-align          : right;
+padding             : 0;
+}
+
+nav ul li {
+display             : inline-block;
+padding             : 0 30 0 30;
+font-size           : 25;
+color               : white;
+border              : solid white 1px;
+font-weight         : 200;
+margin              : 20px;
+transition-duration : 1s;
+border-spacing      : 20px;
+}
+
+nav ul li:hover {
+color               : black;
+background-color    : white;
+
+}
+
+.desc {
+position            : absolute;
+bottom              : 0;
+left                : 0;
+width               : 100%;
+}
+
+.desc p {
+padding             : 0 30 0 30;
+font-size           : 1.5em;
+font-weight         : 200;
+color               : white;
+}
+
+/*COW SECTION*/
+
+.cowSec {
+height              : 100vh;
+background          : white;
+position            : relative;
+}
+
+.cowBaby, .cowBurger {
+background-size     : cover;
+background-position : center;
+width               : 50%;
+height              : 100%;
+position            : relative;
+}
+
+
+.cowBaby {
+float               : left;
+background-image    : url(../Images/cow.jpg);
+}
+
+.cowBurger {
+float               : right;
+background-image    : url(../Images/burger.jpeg);
+}
+
+.fadeInBlock {
+opacity             : 0;
+}
+
+.cowDescContainer {
+position            : absolute;
+bottom              : 0;
+right               : 0;
+display             : block;
+width               : 100%;
+text-align          : right;
+}
+
+.cowDesc {
+font-size           : 3em;
+text-align          : center;
+background          : rgba(255, 255, 255, 0.87);
+display             : inline-block;
+margin-top          : 0;
+margin-bottom       : 0;
+padding             : 0 20px 0 20px;
+font-weight         : 300;
+width               : 60%;
+}
+
+.cowDescDetails {
+font-size           : 1.5em;
+text-align          : center;
+background          : rgba(255, 255, 255, 0.87);
+display             : inline-block;
+margin-top          : 0;
+margin-bottom       : 0;
+padding             : 0 20px 0 20px;
+font-weight         : 300;
+width               : 70%;
+position            : absolute;
+bottom              : 0;
+left                : 0;
+}
+
+/*BALLPIT*/
+
+
+.ballSec {
+height              : 100vh;
+background          : white;
+position            : relative;
+background-image    : url(../Images/ballPit.jpg);
+}
+
+.ballDescContainer {
+position            : absolute;
+top                 : 40%;
+display             : block;
+width               : 100%;
+text-align          : center;
+}
+
+.ballDesc {
+font-size           : 3em;
+text-align          : center;
+background          : rgba(255, 255, 255, 0.87);
+display             : inline-block;
+margin-top          : 0;
+margin-bottom       : 0;
+padding             : 0 20px 0 20px;
+font-weight         : 300;
+width               : 60%;
+}
+
+
+/*CONTACT*/
+
+.contactSec {
+height              : 100vh;
+background          : white;
+position            : relative;
+}
+
+.contactInfo {
+height              : 50%;
+background          : black;
+}
+
+.ownerInfo {
+height              : 50%;
+}
+
+.ownerImage {
+background-image    : url(../Images/hipstertrash.jpg);
+width               : 50%;
+float               : right;
+height              : 100%;
+background-position : center;
+}
+
+
