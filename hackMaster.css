@@ -1,8 +1,8 @@
-@import url("mobile.css") (max-width: 767px);
+@import url("Hackathon/c/mobile.css") (max-width: 767px);
 
-@import url("tablet.css") (min-width: 768px) and (max-width: 1025px);
+@import url("Hackathon/c/tablet.css") (min-width: 768px) and (max-width: 1025px);
 
-@import url("desktop.css") (min-width: 1026px);
+@import url("Hackathon/c/desktop.css") (min-width: 1026px);
 
 /* #General styles
 ================================================== */
