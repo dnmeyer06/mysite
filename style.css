@@ -11,7 +11,7 @@ margin              : 0;
 background          : linear-gradient(
 							rgba(41, 39, 39, 0.88),        
 							rgba(41, 39, 39, 0.88)),  
-							url(../Images/brazil.jpeg);
+							url(RestaurantChallenge/Images/brazil.jpeg);
 	
 background-size     : cover;
 background-position : center;
@@ -136,12 +136,12 @@ position            : relative;
 
 .cowBaby {
 float               : left;
-background-image    : url(../Images/cow.jpg);
+background-image    : url(RestaurantChallenge/Images/cow.jpg);
 }
 
 .cowBurger {
 float               : right;
-background-image    : url(../Images/burger.jpeg);
+background-image    : url(RestaurantChallenge/Images/burger.jpeg);
 }
 
 .fadeInBlock {
@@ -191,7 +191,7 @@ left                : 0;
 height              : 100vh;
 background          : white;
 position            : relative;
-background-image    : url(../Images/ballPit.jpg);
+background-image    : url(RestaurantChallenge/Images/ballPit.jpg);
 }
 
 .ballDescContainer {
@@ -233,7 +233,7 @@ height              : 50%;
 }
 
 .ownerImage {
-background-image    : url(../Images/hipstertrash.jpg);
+background-image    : url(RestaurantChallenge/Images/hipstertrash.jpg);
 width               : 50%;
 float               : right;
 height              : 100%;
