@@ -11,6 +11,7 @@
 html {
   width: 100%;
   display: block;
+  text-decoration: none;
 }
 
 body {
@@ -27,108 +28,114 @@ a {
 
 
 
+
 /*HEADER*/
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  font-size: 1.5em;
+  font-color: white;
+  padding: 20 0 20 0;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+header nav, header .site-title {
+  display: inline-block;
+  text-decoration: none;
+}
+
+header .site-title {
+  margin: 0 0 0 20;
+  border: solid white 1px;
+  padding: 0 30 0 30;
+  color: white;
+  transition-duration: 1s;
+}
+
+header .site-title:hover {
+  background-color: white;
+  color: black;
+  border: 1px white solid;
+}
+
+header nav {
+  position: absolute;
+  right: 0;
+  padding: 0 20 0 20; 
+}
 
 header a {
-  font-size: 25px;
-  text-transform: uppercase;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
   display: inline-block;
-  color: white;
-  box-sizing: border-box;
-}
-
-.aboutheader {
-  background: hsla(200, 89%, 21%, 0.6);
-  transition-duration: .75s;
-}
-
-.aboutheader:hover {
-  background: white;
-  color: hsla(200, 89%, 21%, 0.6);
-}
-
-.photoheader {
-  background: hsla(18.4, 78.7%, 65.1%, 0.6);
-  transition-duration: .75s;
-}
-
-.photoheader:hover {
-  background: white;
-  color: hsla(18.4, 78.7%, 65.1%, 1);
-}
-
-.designheader {
-  background: hsla(235.6, 50.9%, 89.6%, 0.6);
-  transition-duration: .75s
-}
-
-.designheader:hover {
-  background: white;
-  color: hsla(235.6, 50.9%, 89.6%, 0.6);
-}
-
-.contactheader {
-  background: hsla(105.3, 29%, 35.9%, 0.6);
-  transition-duration: .75s
-}
-
-.contactheader:hover {
-  background: white;
-  color: hsla(105.3, 29%, 35.9%, 0.6);
-}
-
-header nav a {
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 header ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-}
-
-header li {
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.landing header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  font-weight: 300;
-  background: hsla(200, 35%, 34%, 0.7);
-  text-align: right;
-  z-index: 10;
-}
-
-header nav a:hover {
-  background: hsla(200, 89%, 21%, 1);
-}
-
-nav {
-  display: inline-block;
-  padding-right: 20px;
-}
-
-header .site-title {
-  line-height: 36px;
-  position: absolute;
-  top: 0;
-  left: 0;
   padding-left: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-left: 30px
 }
+
+header ul a {
+  box-sizing: content-box;
+  color: white;
+}
+
+header ul li {
+  margin: 0 30 0 30;
+}
+
+.scroll {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5 0 5 0;
+}
+
+
+.aboutheader {
+  transition-duration: .75s;
+  border: solid white 1px;
+}
+
+.aboutheader:hover {
+  background: hsla(200, 89%, 21%, 0.6);
+  border: hsla(200, 89%, 21%, 0.6) solid 1px;
+}
+
+.photoheader {
+  border: solid white 1px;
+  transition-duration: .75s;
+}
+
+.photoheader:hover {
+  background: hsla(18.4, 78.7%, 65.1%, 1);
+  border: solid hsla(18.4, 78.7%, 65.1%, 1) 1px;
+}
+
+.designheader {
+  border: solid white 1px;
+  transition-duration: .75s
+}
+
+.designheader:hover {
+  background: hsla(235.6, 50.9%, 89.6%, 0.6);
+  border: solid 1px hsla(235.6, 50.9%, 89.6%, 0.6);
+}
+
+.contactheader {
+  border: solid white 1px;
+  transition-duration: .75s
+}
+
+.contactheader:hover {
+  background: hsla(105.3, 29%, 35.9%, 0.6);
+  border: hsla(105.3, 29%, 35.9%, 0.6) 1px solid;
+}
+
+
 
 /*LANDING*/
 
@@ -144,7 +151,7 @@ header .site-title {
   background-image: url(../img/background3.jpg);
   background-position: center;
   background-size: cover;
-
+  background-attachment: fixed;
 }
 
 .landing-content {
@@ -213,12 +220,6 @@ header .site-title {
   font-weight: 500;
 }
 
-.sec-intro .fa {
-  font-size: 1000%;
-  color: #064767;
-  padding-top: 40px;
-}
-
 .sec-intro h1, .sec-intro h2 {
   margin: 0;
   font-weight: 200;
@@ -258,6 +259,13 @@ header .site-title {
 
 /*PHOTO-SECTION*/
 
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
 #photo {
   width: 100%;
 }
@@ -269,6 +277,12 @@ header .site-title {
 #photo .sec-intro .break {
   border-color: #064767;
 }
+
+#photo .sec-intro .fa {
+    color: #064767;
+    padding-top: 20px;
+    font-size: 1000%;
+  }
 
 .grid{
   width: 100%;
@@ -299,10 +313,13 @@ header .site-title {
   visibility: visible;
 }
 
+.grid-box:hover .box-content {
+  visibility: visible;
+}
+
 .box-caption {
   visibility: hidden;
   font-weight: 400;
-  font-size: 30px;
   color: black;
   position: absolute;
   top: 0;
@@ -317,9 +334,10 @@ header .site-title {
   text-align: center;
   padding: 20px;
   text-transform: uppercase;
+  font-size: 40px;
 }
 
-/*DESIGN*/
+/*-----------------------------DESIGN-----------------------------*/
 
 #design .sec-intro {
   background: #d7d9f2;
@@ -330,11 +348,28 @@ header .site-title {
   color: #4e7641;
 }
 
-#design .grid img {
-  width: 33%;
+#design .box-content {
+  visibility: hidden;
+  color: black;
 }
 
-/*CONTACT*/
+#design .box-caption {
+  padding-top: 10%;
+}
+
+#design .box-caption p {
+  margin: auto;
+  text-align: center;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#design .box-caption p span {
+  font-weight: bold;
+}
+
+/*-----------------------------CONTACT---------------------------------*/
 
 #contact .sec-intro {
   background: #4e7641;
@@ -349,15 +384,49 @@ header .site-title {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 50px;
+  margin-bottom: 0;
 }
 
 #contact ul li span {
   font-weight: 400;
 }
 
+#contact .fa {
+  font-size: 700%;
+  padding: 0 20 40 20;
+}
+
+.fa-linkedin-square {
+  color: #ec8b60;
+}
+
+.fa-facebook-square {
+  color: #064767;
+}
+
+.fa-envelope {
+  color: #d7d9f2;
+}
+
+.conCon {
+  width: 50%;
+  float: left;
+}
+
+.portrait {
+  float: right;
+  width: 50%;
+}
+
+.portrait img {
+    width: 100%;
+    max-height: 483;
+    object-fit: cover;
+    overflow: hidden;
+}
 
 
-/*MEDIA QUERIES*/
+/*----------------------MEDIA QUERIES-----------------------------*/
 
 @media (min-width: 1200px) {
   .box-caption {
@@ -365,15 +434,12 @@ header .site-title {
   }
 }
 
-@media (max-width: 1000px) and (min-width: 850px) {
-  .nav-menu a {
+@media (max-width: 1000px) and (min-width: 851px) {
+  .nav-menu , .site-title {
     font-size: 20px;
+    line-height: 32px;
   }
-  header .site-title {
-    line-height: 30px;
-    font-size: 20px;
-  }
-}
+ }
 
 @media (max-width: 850px) and (min-width: 680px) {
   .grid-box {
@@ -383,10 +449,7 @@ header .site-title {
   .box-caption {
     font-size: 40px;
   }
-  .nav-menu a {
-    font-size: 15px;
-  }
-  header .site-title {
+  .nav-menu , .site-title {
     line-height: 24px;
     font-size: 15px;
   }
@@ -400,23 +463,42 @@ header .site-title {
   .box-caption {
     font-size: 60px;
   }
+
+  .scroll {
+    padding: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header ul {
+    padding: 0;
+  }
+  
+  header nav {
+    padding: 0;
+    width: 80%;
+  }
+
   header nav a li {
     line-height: 42px;
-    font-size: 8px;
+    font-size: 10px;
     height: 42px;
     text-align: center;
+    margin: 0;
   }
   header nav a  {
     height: 100%;
-    width: 25%;
+    width: 24.3%;
     padding: 0;
     margin: 0;
     float: left;
   }
   header .site-title {
     line-height: 42px;
-    font-size: 10px;
-    width: 25%;
+    font-size: 12px;
+    width: 20%;
     float: left;
     padding: 0;
     margin: 0;
@@ -461,12 +543,6 @@ header .site-title {
     font-weight: 500;
   }
 
-  .sec-intro .fa {
-    font-size: 1000%;
-    color: #064767;
-    padding-top: 20px;
-  }
-
   .sec-intro h1, .sec-intro h2 {
     margin: 0;
     font-weight: 200;
@@ -488,39 +564,18 @@ header .site-title {
   .box-caption {
     visibility: hidden;
     font-size: 30px;
-
   }
+
 }
 
 
-
-/*ROUND CORNERS*/
-
-
-.hvr-round-corners {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.75s;
-  transition-duration: 0.75s;
-  -webkit-transition-property: border-radius;
-  transition-property: border-radius;
-}
-.hvr-round-corners:hover, .hvr-round-corners:active {
-  border-radius: 1em;
-}
 
 
 
 
 /*DROPDOWN*/
 
-.dropdown-pane {
+/*.dropdown-pane {
   background-color: #fefefe;
   border: 1px solid #cacaca;
   border-radius: 0;
@@ -778,7 +833,6 @@ header .site-title {
   .is-dropdown-submenu > li {
     width: 100%; }
   .is-dropdown-submenu.js-dropdown-active {
-    display: block; }
-
+    display: block; }*/
 
 
