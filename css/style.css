@@ -42,7 +42,6 @@ header {
   font-color: white;
   padding: 20 0 20 0;
   transition-duration: 1s;
-  background-color: rgba(0, 0, 0, 0.12);
 }
 
 header nav, header .site-title {
@@ -52,16 +51,15 @@ header nav, header .site-title {
 
 header .site-title {
   margin: 0 0 0 20;
-  border: solid white 1px;
   padding: 0 30 0 30;
   color: white;
   transition-duration: 1s;
+  letter-spacing: 4;
 }
 
 header .site-title:hover {
   background-color: white;
   color: black;
-  border: 1px white solid;
 }
 
 header nav {
@@ -87,52 +85,44 @@ header ul a {
 
 header ul li {
   margin: 0 30 0 30;
+  letter-spacing: 4;
 }
 
 .scroll {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 5 0 5 0;
+  background-color: rgba(0, 0, 0, 0.86);
 }
 
 
 .aboutheader {
   transition-duration: .75s;
-  border: solid white 1px;
 }
 
 .aboutheader:hover {
   background: hsla(200, 89%, 21%, 0.6);
-  border: hsla(200, 89%, 21%, 0.6) solid 1px;
 }
 
 .photoheader {
-  border: solid white 1px;
   transition-duration: .75s;
 }
 
 .photoheader:hover {
   background: hsla(18.4, 78.7%, 65.1%, 1);
-  border: solid hsla(18.4, 78.7%, 65.1%, 1) 1px;
 }
 
 .designheader {
-  border: solid white 1px;
   transition-duration: .75s
 }
 
 .designheader:hover {
   background: hsla(235.6, 50.9%, 89.6%, 0.6);
-  border: solid 1px hsla(235.6, 50.9%, 89.6%, 0.6);
 }
 
 .contactheader {
-  border: solid white 1px;
   transition-duration: .75s
 }
 
 .contactheader:hover {
   background: hsla(105.3, 29%, 35.9%, 0.6);
-  border: hsla(105.3, 29%, 35.9%, 0.6) 1px solid;
 }
 
 
@@ -148,7 +138,7 @@ header ul li {
   padding: 100px;
   height: 100vh;
   width: 100%;
-  background-image: url(../img/background3.jpg);
+  background: linear-gradient(to top, rgba(2, 2, 2, 0.42) 40%, transparent 55%),url(../img/background3.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -172,6 +162,8 @@ header ul li {
   -webkit-filter: none;
   text-align: center;
   margin: 0;
+  letter-spacing: 4;
+  line-height: 1.3;
 }
 
 .landing .landCont {
@@ -181,30 +173,15 @@ header ul li {
 
 .landing h1 {
   color: #064767;
-  font-weight: 300;
-  font-size: 50px;
+  font-weight: 400;
+  font-size: 60px;
 }
 
 .landing h2 {
   color: white;
   font-weight: 300;
-  font-size: 40px;
-  padding-top: 100px;
-}
-
-.break {
-  max-width: 60%;
-  margin: 10px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 5px solid
-}
-
-.landing .break {
-  border-color: #ec8b60;
-  margin: 10px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 30px;
+  padding: 50px 140px 0px 140px;
 }
 
 /*SECTION INTRO TEMPLATE*/
@@ -214,48 +191,59 @@ header ul li {
   margin: 0;
 }
 
-.sec-intro .sec-head h1 {
-  padding-top: 40px;
+.sec-head h1 {
+  padding: 100px 0 30px 0;
   font-size: 60px;
   font-weight: 500;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 5;
 }
 
-.sec-intro h1, .sec-intro h2 {
+.sec-intro h1 {
   margin: 0;
   font-weight: 200;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  letter-spacing: 4;
+  line-height: 1.5;
 }
 
 .sec-intro h1 {
-  color: white;
-  font-size: 30px;
-  padding-bottom: 30px;
+  font-size: 20px;
+  padding: 0 15% 10% 15%;
 }
 
 .sec-intro h2 {
-  font-size: 25px;
+  font-size: 18px;
   padding-bottom: 50px;
+  letter-spacing: 4;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 200;
+  margin: 0;
 }
 
 /*ABOUT-SECTION*/
 
 #about {
   width: 100%;
-}
-
-#about .sec-intro {
   background-color: #064767;
 }
 
-#about .sec-intro .break {
-  border-color: #4e7641;
+#about .sec-head {
+  color: white;
+}
+
+#about .sec-intro h1 {
+  color: white;
 }
 
 #about .sec-intro h2 {
-  color: #d7d9f2;
+  color: #a1a1ab;
 }
+
 
 /*PHOTO-SECTION*/
 
@@ -268,25 +256,17 @@ header ul li {
 
 #photo {
   width: 100%;
+  clear: both;
 }
 
-#photo .sec-intro {
+#photo {
   background-color: #ec8b60;
 }
 
-#photo .sec-intro .break {
-  border-color: #064767;
-}
-
-#photo .sec-intro .fa {
-    color: #064767;
-    padding-top: 20px;
-    font-size: 1000%;
-  }
-
-.grid{
+#photo .grid{
   width: 100%;
   overflow: auto;
+  background: white;
 }
 
 .grid-box {
@@ -306,7 +286,7 @@ header ul li {
 }
 
 .grid-box a:hover {
-  opacity: .3;
+  opacity: .1;
 }
 
 .grid-box:hover .box-caption {
@@ -339,13 +319,21 @@ header ul li {
 
 /*-----------------------------DESIGN-----------------------------*/
 
+#design {
+  background: #d7d9f2;
+}
+
+#design .grid {
+  background: black;
+}
+
+#design .sec-head, #design .sec-intro {
+  color: #464242
+}
+
 #design .sec-intro {
   background: #d7d9f2;
   clear: both;
-}
-
-#design .sec-intro h1 {
-  color: #4e7641;
 }
 
 #design .box-content {
@@ -360,25 +348,56 @@ header ul li {
 #design .box-caption p {
   margin: auto;
   text-align: center;
-  padding-top: 5px;
-  text-transform: uppercase;
-  font-size: 20px;
+  font-size: 15px;
+  color: white;
+  padding: 7% 15% 0 15%;
+  letter-spacing: 4;
+  line-height: 1.3;
 }
 
-#design .box-caption p span {
+#design .box-caption .boxHeader {
   font-weight: bold;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 20;
+  letter-spacing: 3;
+  line-height: 1.2;
 }
+
+
+#design .grid-box {
+  width: 50%;
+  float: left;
+  position: relative;
+  background: black;
+}
+
+#design .grid-box a img {
+  background: black;
+}
+
+
 
 /*-----------------------------CONTACT---------------------------------*/
 
+#contact {
+  background-color: #fcfcfc;
+}
+
+#contact .sec-head {
+  color: black;
+  text-align: left;
+} 
+
+
 #contact .sec-intro {
-  background: #4e7641;
+  color: #464242;
+  padding: 0 0 0 20px;
 }
 
 #contact ul {
-  align-items: center;
+  text-align: left;
   list-style-type: none;
-  color: white;
   font-size: 30px;
   padding-top: 0;
   padding-left: 0;
@@ -439,6 +458,10 @@ header ul li {
     font-size: 20px;
     line-height: 32px;
   }
+
+  #design .box-caption p {
+  font-size: 13px;
+}
  }
 
 @media (max-width: 850px) and (min-width: 680px) {
@@ -451,8 +474,19 @@ header ul li {
   }
   .nav-menu , .site-title {
     line-height: 24px;
-    font-size: 15px;
+    font-size: 13px;
   }
+   #design .box-caption p {
+  font-size: 20px;
+}
+
+#design .box-head {
+  font-size: 30px;
+}
+
+#design .grid-box {
+  width: 100%;
+}
 }
 
 @media (max-width: 680px) {
@@ -478,24 +512,25 @@ header ul li {
   
   header nav {
     padding: 0;
-    width: 80%;
+    width: 100%;
   }
 
   header nav a li {
     line-height: 42px;
-    font-size: 10px;
+    font-size: 8px;
     height: 42px;
     text-align: center;
     margin: 0;
   }
   header nav a  {
     height: 100%;
-    width: 24.3%;
+    width: 25%;
     padding: 0;
     margin: 0;
     float: left;
   }
   header .site-title {
+    display: none;
     line-height: 42px;
     font-size: 12px;
     width: 20%;
@@ -511,7 +546,14 @@ header ul li {
   .landing-content {
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 300px;
   }
+
+  .landCont {
+    margin: 0;
+    text-align: center;
+  }
+
   .landing h1, .landing h2 {
     -webkit-filter: none;
     text-align: center;
@@ -523,21 +565,21 @@ header ul li {
     font-weight: 300;
     padding-top: 10px;
     padding-bottom: 20px;
-    font-size: 32px;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
   }
 
   .landing h2 {
     color: white;
     font-weight: 300;
     font-size: 20px;
-    padding-top: 80px;
-  }
-  nav {
-    width: 75%;
-    float: right;
     padding: 0;
   }
-  .sec-intro .sec-head h1 {
+  nav {
+    float: right;
+  }
+.sec-head h1 {
     padding-top: 50px;
     font-size: 40px;
     font-weight: 500;
@@ -553,7 +595,7 @@ header ul li {
 
   .sec-intro h1 {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     padding-bottom: 20px;
   }
 
@@ -565,7 +607,17 @@ header ul li {
     visibility: hidden;
     font-size: 30px;
   }
+#design .box-caption p {
+  font-size: 15px;
+}
 
+#design .box-head {
+  font-size: 25px;
+}
+
+#design .grid-box {
+  width: 100%;
+}
 }
 
 
