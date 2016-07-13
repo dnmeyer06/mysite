@@ -513,6 +513,10 @@ header ul li {
     font-size: 60px;
   }
 
+  header {
+    padding: 0;
+  }
+
   header ul {
     padding: 0;
   }
@@ -601,7 +605,6 @@ header ul li {
   }
 
   .sec-intro h1 {
-    color: white;
     font-size: 15px;
     padding-bottom: 20px;
   }
