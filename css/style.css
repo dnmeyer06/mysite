@@ -515,6 +515,7 @@ header ul li {
 
   header {
     padding: 0;
+    background-color: black;
   }
 
   header ul {
@@ -524,6 +525,7 @@ header ul li {
   header nav {
     padding: 0;
     width: 100%;
+    background: black;
   }
 
   header nav a li {
@@ -532,6 +534,7 @@ header ul li {
     height: 42px;
     text-align: center;
     margin: 0;
+    color: white;
   }
   header nav a  {
     height: 100%;
@@ -540,6 +543,11 @@ header ul li {
     margin: 0;
     float: left;
   }
+
+  .scroll {
+  background-color: rgba(0, 0, 0, 0.86);
+  color: black;
+}
   header .site-title {
     display: none;
     line-height: 42px;
@@ -631,6 +639,18 @@ header ul li {
 
 #design .box-caption li {
   font-size: 10px;
+}
+
+#contact .fa {
+  font-size: 80px;
+}
+
+.conCon {
+  width: 100%;
+}
+
+.portrait {
+  width: 100%;
 }
 }
 
