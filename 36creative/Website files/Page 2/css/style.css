@@ -31,31 +31,64 @@
 }
 
 body {
-	background: #191919;
+	background: #fff;
 	background-size: cover;
 	background-position: right;
 	font-family: 'AvenirNext', sans-serif;
 	font-size: 16px;
 	text-align: center;
-	color: #868686;
+	color: #111;
+	margin: 0;
 }
 
-.content, .logo {
+.cornLogo {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 0 30 0 0;
+}
+
+.greyb {
+	background-color: #f2f2f2;
+	width: 100%;
+
+}
+
+.content {
+	position: relative;
+	min-height: 100vh;
+}
+
+.content h1.tagline {
+	color: #333
+}
+
+.wrapper {
 	width: 704px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10;
 }
 
-.logo h1 {
+.content .logo {
+	margin-top: 50;
+	margin-bottom: 15;
+	padding: 0 0 0 0;
+
+}
+
+.content .logo h1 {
 	font-family: 'BrandonGro';
 	font-weight: 500;
 	display: block;
 	font-size: 42.5px;
 	letter-spacing: 15.93;
 	text-transform: uppercase;
-	margin-top: 150px;
+	margin-top: 50px;
 	text-align: left;
-	border-top: #ffffff solid 1px;
-	color: #ffffff
+	border-top: #333 solid 1px;
+	color: #333;
+	padding:0;
 }
 
 .content h1 {
@@ -69,6 +102,16 @@ body {
 	box-sizing: content-box;
 }
 
+.content ul li {
+	text-align: left;
+	letter-spacing: 3;
+	line-height: 1.5;
+	padding: 10 0 10 0;
+}
+
+.content ul li span {
+	font-weight: bold;
+}
 
 p {
 	list-style-type: none;
@@ -77,32 +120,43 @@ p {
 	font-weight: 200;
 	font-size: 25px;
 	font: normal 400 16px "AvenirNext",sans-serif;
+	letter-spacing: 3;
+	line-height: 1.5;
+}
+
+.menuSec {
+	padding: 30;
 }
 
 .menuSec a, .menuSec p {
-	font-size: 10px;
+	font-size: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 5.76px;
 	color: #fff;
 	display: inline-block;
 	transition-duration: 1s;
-	padding: 10 20 10 20;
-}
-
-.menuSec p {
-	padding: 0;
+	padding: 0 10 0 10;
+	border-bottom: #191919;
+	color: #333;
+	margin: 0;
 }
 
 .menuSec a:hover {
 	border-bottom: solid 2px #fff;
 }
 
+.bottomtag {
+	text-align: center;
+	margin: 0;
+	padding-top: 55px;
+}
+
 .grid {
 	display: block;
 	max-height: 25%;
 	background: white;
-	margin: 40 0 0 0;
+	margin: 0;
 }
 
 .gridBox {
@@ -115,24 +169,41 @@ p {
 }
 
 .gridOver {
-	z-index: 1;
 	width: 100%;
-	height:auto;
 	visibility: hidden;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(51, 51, 51, 0.67);
-	color: white;
+	margin-top: 40%;
+}
+
+.gridOver p{
+	color: black;
+	font-size: 24px;
+	font-weight: 700;
+	padding-left: 30px;
+	letter-spacing: .3em;
+	opacity: 1;
+	text-transform: uppercase;
 }
 
 .gridBox:hover .gridOver {
 	visibility: visible;
 }
 
-.gridBox img {
+.gridBox a:hover {
+	opacity: .2;
+}
+
+.gridBox a {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.gridBox a img {
 	width: 100%;
 	height: auto;
 }
