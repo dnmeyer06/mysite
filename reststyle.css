@@ -1,337 +1,472 @@
-body {
-font-family         : 'Open Sans', sans-serif;
-background          : white;
-margin              : 0;
+body
+{
+    font-family: 'Open Sans', sans-serif;
+
+    margin: 0;
+
+    letter-spacing: 1.5;
+
+    background: white;
 }
 
 
 /*LANDING SECTION*/
 
-.homepage-hero-module {
+.homepage-hero-module
+{
+    position: relative;
+
     border-right: none;
     border-left: none;
-    position: relative;
 }
 .no-video .video-container video,
-.touch .video-container video {
+.touch .video-container video
+{
     display: none;
 }
 .no-video .video-container .poster,
-.touch .video-container .poster {
+.touch .video-container .poster
+{
     display: block !important;
 }
-.video-container {
+.video-container
+{
     position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
+    bottom: 0;
+    left: 0;
+
     overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
     background: #000;
 }
-.video-container .poster img {
-    width: 100%;
+.video-container .poster img
+{
+    position: absolute;
     bottom: 0;
-    position: absolute;
-}
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
+
     width: 100%;
 }
-.video-container video {
+.video-container .filter
+{
+    position: absolute;
+    z-index: 100;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, .4);
+}
+.video-container video
+{
     position: absolute;
     z-index: 0;
     bottom: 0;
 }
-.video-container video.fillWidth {
+.video-container video.fillWidth
+{
     width: 100%;
 }
 
 
 
-.landing {
-background          : linear-gradient(
-							rgba(41, 39, 39, 0.88),        
-							rgba(41, 39, 39, 0.88)),  
-							url('Restaurant Challenge/Images/brazil.jpeg');
-	
-background-size     : cover;
-background-position : center;
-height              : 100vh;
+.landing
+{
+    height: 100vh;
+
+    background: linear-gradient(
+    rgba(41, 39, 39, .88),
+    rgba(41, 39, 39, .88)),
+    url('Restaurant Challenge/Images/dish.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-nav {
-z-index             : 100;
-padding             : 0;
-font-weight         : 300;
-display             : block;
-position            : fixed;
-width               : 100%;
-background          : rgba(41, 39, 39, 0.88);
+nav
+{
+    font-weight: 300;
+
+    position: fixed;
+    z-index: 100;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    background: rgba(41, 39, 39, .88);
 }
 
-.logoContainer {
-position            : absolute;
-top                 : 35%;
-display             : block;
-width               : 100%;
-text-align          : center;
+.logoContainer
+{
+    position: absolute;
+    top: 35%;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
 }
 
-.logo {
-font-size           : 7em;
-text-align          : center;
-display             : inline-block;
-margin-top          : 0;
-margin-bottom       : 0;
-padding             : 0 20px 0 20px;
-font-weight         : 300;
-color               : white;
-border              : solid 2px white;
+.logo
+{
+    font-size: 7em;
+    font-weight: 300;
+
+    display: inline-block;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 20px 0 20px;
+
+    text-align: center;
+
+    color: white;
+    border: solid 2px white;
 }
 
-.logoSubContainer {
-position            : absolute;
-top                 : 50%;
-display             : block;
-width               : 100%;
-text-align          : center;
-margin-top          : 50px;
+.logoSubContainer
+{
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 100%;
+    margin-top: 50px;
+
+    text-align: center;
 }
 
-.logoSubBack {
-display             : inline-block;
-color               : white;
-border              : solid 1px white;
+.logoSubBack
+{
+    display: inline-block;
+
+    color: white;
+    border: solid 1px white;
 }
 
-.logoSub {
-font-size           : 2em;
-font-weight         : 300;
-margin              : 0;
-padding             : 30px;
+.logoSub
+{
+    font-size: 2em;
+    font-weight: 300;
+
+    margin: 0;
+    padding: 30px;
 }
 
 
-ul {
-list-style-type     : none;
-padding             : 0;
-margin              : 0;
-text-align          : center;
-display             : block;
-width               : 100%;
+ul
+{
+    display: block;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    text-align: center;
 }
 
-.menu {
-text-align          : right;
-padding             : 0;
+.menu
+{
+    padding: 0;
+
+    text-align: right;
 }
 
-nav ul li {
-display             : inline-block;
-padding             : 0 30 0 30;
-font-size           : 25;
-color               : white;
-border              : solid white 1px;
-font-weight         : 200;
-margin              : 20px;
-transition-duration : 1s;
-border-spacing      : 20px;
+nav ul li
+{
+    font-size: 25;
+    font-weight: 200;
+
+    display: inline-block;
+
+    margin: 20px;
+    padding: 0 30 0 30;
+
+    border-spacing: 20px;
+
+    transition-duration: 1s;
+
+    color: white;
+    border: solid white 1px;
 }
 
-nav ul li:hover {
-color               : black;
-background-color    : white;
-
+nav ul li:hover
+{
+    color: #333;
+    background-color: white;
 }
 
-.desc {
-position            : absolute;
-bottom              : 0;
-left                : 0;
-width               : 100%;
+.desc
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
 }
 
-.desc p {
-padding             : 0 30 0 30;
-font-size           : 1.5em;
-font-weight         : 200;
-color               : white;
+.desc p
+{
+    font-size: 1.5em;
+    font-weight: 200;
+
+    padding: 0 30 0 30;
+
+    color: white;
 }
 
 
 /*MENU SECTION*/
 
-.menuSec {
-height              : 100vh;
-background-image    : url('Restaurant Challenge/Images/dumpster.jpg');
-background-position : center;
-background-size     : cover;
-position            : relative;
+.menuSec
+{
+    position: relative;
+
+    height: 100vh;
+
+    background-image: linear-gradient(to right, rgba(2, 2, 2, .51) 40%, transparent 55%), url('Restaurant Challenge/Images/dumpster.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-.menuSec h1 {
-display             : inline-block;
-color               : white;
-border              : solid 1px white;
-font-weight         : 300;
-width: 25%;
+.menuSec h1
+{
+    font-size: 2em;
+    font-weight: 400;
+
+    display: block;
+
+    width: 35%;
+    margin: 0;
+    padding: 1em 0 0 2em;
+
+    color: rgba(224, 102, 90, .9);
 }
 
-.menuSec p {
-width               : 50%;
-font-size           : 1.5em;
-text-align          : center;
-background          : rgba(255, 255, 255, 0.87);
-display             : inline-block;
-margin-top          : 0;
-margin-bottom       : 0;
-padding             : 0 20px 0 20px;
-font-weight         : 300;
-position            : absolute;
-bottom              : 0;
-left                : 0;
+.menuSec p
+{
+    font-size: 1em;
+    font-weight: 300;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: inline-block;
+
+    width: 30%;
+    margin-top: 0;
+    margin-bottom: 3em;
+    padding: 0 0 4em 4em;
+
+    text-align: left;
+
+    color: #d6d2d2;
 }
 
 
 /*COW SECTION*/
 
-.cowSec {
-height              : 100vh;
-background          : white;
-position            : relative;
+.cowSec
+{
+    position: relative;
+
+    height: 100vh;
+
+    background: white;
 }
 
-.cowBaby, .cowBurger {
-background-size     : cover;
-background-position : center;
-width               : 50%;
-height              : 100%;
-position            : relative;
+.cowBaby,
+.cowBurger
+{
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+
+    background-position: center;
+    background-size: cover;
 }
 
 
-.cowBaby {
-float               : left;
-background-image    : url('Restaurant Challenge/Images/cow.jpg');
+.cowBaby
+{
+    float: left;
+
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, .39) 10%, transparent 50%), url('Restaurant Challenge/Images/cow.jpg');
 }
 
-.cowBurger {
-float               : right;
-background-image    : url('Restaurant Challenge/Images/burger.jpeg');
+.cowBurger
+{
+    float: right;
+
+    background-image: linear-gradient(to top, rgba(2, 2, 2, .61) 30%, transparent 50%), url('Restaurant Challenge/Images/burger.jpeg');
 }
 
-.fadeInBlock {
-opacity             : 0;
+.fadeInBlock
+{
+    opacity: 0;
 }
 
-.cowDescContainer {
-position            : absolute;
-bottom              : 0;
-right               : 0;
-display             : block;
-width               : 100%;
-text-align          : right;
+.cowDescContainer
+{
+    display: inline-block;
+
+    margin-right: 0;
+
+    text-align: right;
 }
 
-.cowDesc {
-font-size           : 3em;
-text-align          : center;
-background          : rgba(255, 255, 255, 0.87);
-display             : inline-block;
-margin-top          : 0;
-margin-bottom       : 0;
-padding             : 0 20px 0 20px;
-font-weight         : 300;
-width               : 60%;
+.cowDesc
+{
+    font-size: 2em;
+    font-weight: 400;
+
+    display: inline-block;
+
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 4em 1em 0 .5em;
+
+    text-align: right;
+
+    color: rgba(224, 102, 90, .9);
 }
 
-.cowDescDetails {
-font-size           : 1.5em;
-text-align          : center;
-background          : rgba(255, 255, 255, 0.87);
-display             : inline-block;
-margin-top          : 0;
-margin-bottom       : 0;
-padding             : 0 20px 0 20px;
-font-weight         : 300;
-width               : 70%;
-position            : absolute;
-bottom              : 0;
-left                : 0;
+.cowDescDetails
+{
+    font-size: 1.5em;
+    font-weight: 300;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: inline-block;
+
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 20px .5em 20px;
+
+    text-align: left;
+
+    color: #d6d2d2;
 }
 
 /*BALLPIT*/
 
 
-.ballSec {
-height              : 100vh;
-background          : white;
-position            : relative;
-background-image    : url('Restaurant Challenge/Images/ballPit.jpg');
+.ballSec
+{
+    position: relative;
+
+    height: 100vh;
+
+    background: white;
+    background-image: url('Restaurant Challenge/Images/ballPit.jpg');
 }
 
-.ballDescContainer {
-position            : absolute;
-top                 : 40%;
-display             : block;
-width               : 100%;
-text-align          : center;
+.ballDescContainer
+{
+    position: absolute;
+    top: 40%;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
 }
 
-.ballDesc {
-font-size           : 3em;
-text-align          : center;
-background          : rgba(255, 255, 255, 0.87);
-display             : inline-block;
-margin-top          : 0;
-margin-bottom       : 0;
-padding             : 0 20px 0 20px;
-font-weight         : 300;
-width               : 60%;
+.ballDesc
+{
+    font-size: 3em;
+    font-weight: 300;
+
+    display: inline-block;
+
+    width: 60%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 20px 0 20px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, .87);
 }
 
 
 /*CONTACT*/
 
-.contactSec {
-height              : 100vh;
-background          : white;
-position            : relative;
+.contactSec
+{
+    height: 100vh;
+
+    background: white;
 }
 
-.contactInfo {
-height              : 50%;
-background          : black;
-color               : white;
+.contactDiv
+{
+    position: relative;
+
+    height: 50%;
+
+    color: white;
+    background: #333;
 }
 
-.contactInfo p {
-margin              : 0;
-padding             : 20px;
+.contactInfo
+{
+    position: absolute;
+    top: 50%;
+
+    margin-top: -137px;
 }
 
-.contactInfo p span {
-font-weight         : bold;
+.contactInfo p
+{
+    margin: 0;
+    padding: 20px;
 }
 
-.ownerInfo {
-height              : 50%;
+.contactInfo p span
+{
+    font-weight: bold;
 }
 
-.ownerBio {
-float               : left;
-width               : 50%;
+.ownerInfo
+{
+    height: 50%;
 }
 
-.ownerImage {
-background-image    : url('Restaurant Challenge/Images/hipstertrash.jpg');
-width               : 50%;
-float               : right;
-height              : 100%;
-background-position : center;
+.ownerBio
+{
+    float: left;
+
+    width: 50%;
 }
 
+.ownerBio p
+{
+    padding: 0 1em 0 1em;
+}
 
+.ownerImage
+{
+    float: right;
+
+    width: 50%;
+    height: 100%;
+
+    background-image: url('Restaurant Challenge/Images/hipstertrash.jpg');
+    background-position: center;
+    background-size: cover;
+}
