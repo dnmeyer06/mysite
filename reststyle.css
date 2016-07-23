@@ -12,63 +12,6 @@ body
 
 /*LANDING SECTION*/
 
-.homepage-hero-module
-{
-    position: relative;
-
-    border-right: none;
-    border-left: none;
-}
-.no-video .video-container video,
-.touch .video-container video
-{
-    display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster
-{
-    display: block !important;
-}
-.video-container
-{
-    position: relative;
-    bottom: 0;
-    left: 0;
-
-    overflow: hidden;
-
-    width: 100%;
-    height: 100%;
-
-    background: #000;
-}
-.video-container .poster img
-{
-    position: absolute;
-    bottom: 0;
-
-    width: 100%;
-}
-.video-container .filter
-{
-    position: absolute;
-    z-index: 100;
-
-    width: 100%;
-
-    background: rgba(0, 0, 0, .4);
-}
-.video-container video
-{
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth
-{
-    width: 100%;
-}
-
 
 
 .landing
@@ -186,14 +129,8 @@ nav ul li
     display: inline-block;
 
     margin: 20px;
-    padding: 0 30 0 30;
-
-    border-spacing: 20px;
 
     transition-duration: 1s;
-
-    color: white;
-    border: solid white 1px;
 }
 
 nav ul li:hover
@@ -469,4 +406,100 @@ nav ul li:hover
     background-image: url('Restaurant Challenge/Images/hipstertrash.jpg');
     background-position: center;
     background-size: cover;
+}
+
+
+
+
+/* Valentine MENU */
+
+.menu--valentine .menu__item {
+    position: relative;
+    margin: 0 1em;
+}
+
+.menu--valentine .menu__link {
+    position: relative;
+    min-width: 105px;
+    text-align: center;
+    color: #b5b5b5;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.menu--valentine .menu__link:hover,
+.menu--valentine .menu__link:focus {
+    color: #929292;
+}
+
+.menu--valentine .menu__item--current .menu__link {
+    color: #d94f5c;
+}
+
+.menu--valentine .menu__item::before,
+.menu--valentine .menu__item::after,
+.menu--valentine .menu__link::before,
+.menu--valentine .menu__link::after {
+    content: '';
+    position: absolute;
+    background: #d94f5c;
+    -webkit-transform-origin: 350% 350%;
+    transform-origin: 350% 350%;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.menu--valentine .menu__item::before,
+.menu--valentine .menu__item::after {
+    top: 0;
+    width: 2px;
+    height: 100%;
+    -webkit-transform: scale3d(1, 0, 1);
+    transform: scale3d(1, 0, 1);
+}
+
+/* left line */
+.menu--valentine .menu__item::before {
+    left: 0;
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+/* right line */
+.menu--valentine .menu__item::after {
+    right: 0;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.menu--valentine .menu__link::before,
+.menu--valentine .menu__link::after {
+    left: 0;
+    width: 100%;
+    height: 2px;
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+}
+
+/* top line */
+.menu--valentine .menu__link::before {
+    top: 0;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+/* bottom line */
+.menu--valentine .menu__link::after {
+    bottom: 0;
+}
+
+.menu--valentine .menu__item--current::before,
+.menu--valentine .menu__item--current::after,
+.menu--valentine .menu__item--current .menu__link::before,
+.menu--valentine .menu__item--current .menu__link::after {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
 }

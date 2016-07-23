@@ -131,7 +131,7 @@ header
     }
 }
 
-.designheader
+.developmentheader
 {
     transition-duration: .75s;
     &:hover
@@ -248,21 +248,18 @@ header
     h1
     {
         font-size: 20px;
-        font-weight: 200;
+        font-weight: 300;
         line-height: 1.5;
 
         margin: 0;
-        padding: 0 15% 10% 15%;
-        padding-top: 30px;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding: 0 20% 10% 20%;
 
         letter-spacing: 4;
     }
     h2
     {
         font-size: 18px;
-        font-weight: 200;
+        font-weight: 400;
         font-style: italic;
         line-height: 1.5;
 
@@ -316,13 +313,9 @@ header
     width: 100%;
 
     background-color: #ec8b60;
-    .grid
+    a
     {
-        overflow: auto;
-
-        width: 100%;
-
-        background: white;
+        font-size: 60px;
     }
 }
 
@@ -387,9 +380,9 @@ header
 }
 
 
-/*-----------------------------DESIGN-----------------------------*/
+/*-----------------------------development-----------------------------*/
 
-#design
+#development
 {
     background: #d7d9f2;
     .sec-head
@@ -578,7 +571,7 @@ header
         font-size: 20px;
         line-height: 32px;
     }
-    #design .box-caption li
+    #development .box-caption li
     {
         font-size: 10px;
     }
@@ -602,7 +595,7 @@ header
         font-size: 13px;
         line-height: 24px;
     }
-    #design
+    #development
     {
         .box-caption li
         {
@@ -778,9 +771,8 @@ header
 
         visibility: hidden;
     }
-    #design
+    #development
     {
-        
         .grid
         {
             .gridbox
