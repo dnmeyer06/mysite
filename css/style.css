@@ -170,58 +170,6 @@ header {
   #about .sec-intro h2 {
     color: #a1a1ab; }
 
-/*PHOTO-SECTION*/
-.hidden {
-  opacity: 0; }
-
-.visible {
-  opacity: 1; }
-
-#photo {
-  clear: both;
-  width: 100%;
-  background-color: #ec8b60; }
-  #photo .grid {
-    overflow: auto;
-    width: 100%;
-    background: white; }
-#photo a {
-  font-size: 60px;
-}
-
-
-.grid-box {
-  position: relative;
-  float: left;
-  width: 33.3333333%; }
-  .grid-box .box-caption {
-    font-weight: 400;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    display: block;
-    visibility: hidden;
-    margin-top: -47px;
-    text-align: center;
-    color: #333; }
-    .grid-box .box-caption p {
-      font-size: 40px;
-      margin: auto;
-      text-align: center;
-      text-transform: uppercase; }
-  .grid-box a {
-    display: block;
-    transition-duration: .75s;
-    color: orange; }
-    .grid-box a img {
-      width: 100%; }
-    .grid-box a:hover {
-      opacity: .1; }
-  .grid-box:hover .box-caption,
-  .grid-box:hover .box-content {
-    visibility: visible; }
-
 /*-----------------------------development-----------------------------*/
 #development {
   background: #d7d9f2; }
@@ -231,44 +179,47 @@ header {
     clear: both;
     color: #464242;
     background: #d7d9f2; }
-  #development .grid {
+  #development .grid-box {
+    position: relative;
+    float: left;
+    width: 50%;
     background: #333; }
-    #development .grid .grid-box {
-      position: relative;
-      float: left;
-      width: 50%;
-      background: #333; }
-      #development .grid .grid-box .box-caption {
-        position: absolute;
-        top: 50%;
-        margin-top: -111.5px; }
-        #development .grid .grid-box .box-caption .boxHeader {
-          font-size: 20;
-          font-weight: bold;
-          line-height: 1.2;
-          padding: 0;
+    #development .grid-box .box-caption {
+      font-weight: 400;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      display: block;
+      visibility: hidden;
+      margin-top: -140px;
+      text-align: center;
+      color: white; }
+      #development .grid-box .box-caption p {
+        font-size: 30px;
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4;
+        padding: 0 5% 0 5%; }
+      #development .grid-box .box-caption ul {
+        padding: 0 10% 0 10%; }
+        #development .grid-box .box-caption ul li {
+          font-size: 13px;
           letter-spacing: 3;
-          text-transform: uppercase; }
-        #development .grid .grid-box .box-caption ul {
-          margin: 0 7% 0 7%; }
-        #development .grid .grid-box .box-caption li {
-          font-size: 15px;
-          line-height: 1.3;
-          margin: auto;
-          letter-spacing: 4;
-          color: white; }
-        #development .grid .grid-box .box-caption p {
-          font-size: 15px;
-          line-height: 1.3;
-          margin: auto;
-          text-align: center;
-          letter-spacing: 4;
-          color: white; }
-        #development .grid .grid-box .box-caption li {
-          padding: 3% 5% 0 5%;
-          text-align: left; }
-      #development .grid .grid-box a img {
-        background: #333; }
+          text-align: left;
+          line-height: 1.5; }
+    #development .grid-box a {
+      display: block;
+      transition-duration: .75s;
+      color: orange; }
+      #development .grid-box a img {
+        width: 100%; }
+      #development .grid-box a:hover {
+        opacity: .1; }
+    #development .grid-box:hover .box-caption,
+    #development .grid-box:hover .box-content {
+      visibility: visible; }
 
 /*-----------------------------CONTACT---------------------------------*/
 #contact {
@@ -300,7 +251,7 @@ header {
     #contact ul li span {
       font-weight: 400; }
   #contact .fa {
-    font-size: 700%;
+    font-size: 80px;
     padding: 0 20 40 20; }
   #contact .fa-linkedin-square {
     color: #ec8b60; }
@@ -320,22 +271,34 @@ header {
     background-size: cover; }
 
 /*----------------------MEDIA QUERIES-----------------------------*/
-@media (min-width: 1200px) {
-  .box-caption {
-    font-size: 45px; } }
+@media (max-width: 1200px) and (min-width: 1001px) {
+  #development .grid-box .box-caption p {
+    font-size: 25px;
+    letter-spacing: 4; }
+  #development .grid-box .box-caption ul li {
+    font-size: 12px;
+    letter-spacing: 2; } }
 @media (max-width: 1000px) and (min-width: 851px) {
   .nav-menu,
   .site-title {
     font-size: 20px;
     line-height: 32px; }
 
-  #development .box-caption li {
-    font-size: 10px; } }
-@media (max-width: 850px) and (min-width: 680px) {
-  .grid-box {
-    float: left;
-    width: 50%; }
+  #development .grid-box {
+    width: 100%; }
+    #development .grid-box .box-caption p {
+      font-size: 40px;
+      letter-spacing: 5; }
+    #development .grid-box .box-caption ul li {
+      font-size: 17px;
+      letter-spacing: 4; }
 
+  #contact .fa {
+    font-size: 40px; }
+  #contact .conCon,
+  #contact .portrait {
+    width: 100%; } }
+@media (max-width: 850px) and (min-width: 680px) {
   .box-caption {
     font-size: 40px; }
 
@@ -349,15 +312,14 @@ header {
   #development .box-head {
     font-size: 30px; }
   #development .grid-box {
-    width: 100%; } }
-@media (max-width: 680px) {
-  .grid-box {
-    float: none;
     width: 100%; }
 
-  .box-caption {
-    font-size: 60px; }
-
+  #contact .fa {
+    font-size: 40px; }
+  #contact .conCon,
+  #contact .portrait {
+    width: 100%; } }
+@media (max-width: 680px) {
   header {
     padding: 0;
     background-color: #333; }
@@ -452,15 +414,22 @@ header {
     font-size: 30px;
     visibility: hidden; }
 
-  #development .grid .gridbox {
+  #development .grid .grid-box {
     width: 100%; }
-    #development .grid .gridbox .box-caption .box-head {
-      font-size: 1S5px; }
-    #development .grid .gridbox .box-caption ul li {
-      font-size: 10px; }
+    #development .grid .grid-box .box-caption {
+      padding-top: 5%;
+      position: absolute;
+      top: 0;
+      margin: 0; }
+      #development .grid .grid-box .box-caption p {
+        font-size: 15px; }
+      #development .grid .grid-box .box-caption .box-head {
+        font-size: 15px; }
+      #development .grid .grid-box .box-caption ul li {
+        font-size: 10px; }
 
   #contact .fa {
-    font-size: 80px; }
+    font-size: 20px; }
   #contact .conCon,
   #contact .portrait {
     width: 100%; } }
