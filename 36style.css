@@ -6,19 +6,19 @@
 
     src: url('36creative/Website files/Page 2/font/AvenirNextLTPro-Regular.otf');
     /*src: url('../AvenirNextLTPro-BoldCnIt.otf');
-	src: url('../AvenirNextLTPro-Cn.otf');
-	src: url('../AvenirNextLTPro-CnIt.otf');
-	src: url('../font/AvenirNextLTPro-Demi.otf');
-	src: url('../font/AvenirNextLTPro-DemiCn.otf');
-	src: url('../font/AvenirNextLTPro-DemiCnIt.otf');
-	src: url('../font/AvenirNextLTPro-DemiIt.otf');
-	src: url('../font/AvenirNextLTPro-HeavyCn.otf');
-	src: url('../font/AvenirNextLTPro-HeavyCnIt.otf');
-	src: url('../font/AvenirNextLTPro-It.otf');
-	src: url('../font/AvenirNextLTPro-MediumCn.otf');
-	src: url('../font/AvenirNextLTPro-MediumCnIt.otf');
-	src: url('../font/AvenirNextLTPro-UltLtCn.otf');
-	src: url('../font/AvenirNextLTPro-UltLtCnIt.otf');*/
+    src: url('../AvenirNextLTPro-Cn.otf');
+    src: url('../AvenirNextLTPro-CnIt.otf');
+    src: url('../font/AvenirNextLTPro-Demi.otf');
+    src: url('../font/AvenirNextLTPro-DemiCn.otf');
+    src: url('../font/AvenirNextLTPro-DemiCnIt.otf');
+    src: url('../font/AvenirNextLTPro-DemiIt.otf');
+    src: url('../font/AvenirNextLTPro-HeavyCn.otf');
+    src: url('../font/AvenirNextLTPro-HeavyCnIt.otf');
+    src: url('../font/AvenirNextLTPro-It.otf');
+    src: url('../font/AvenirNextLTPro-MediumCn.otf');
+    src: url('../font/AvenirNextLTPro-MediumCnIt.otf');
+    src: url('../font/AvenirNextLTPro-UltLtCn.otf');
+    src: url('../font/AvenirNextLTPro-UltLtCnIt.otf');*/
 }
 
 @font-face
@@ -60,6 +60,33 @@ body
     padding: 0 30 0 0;
 }
 
+.cornLogo img
+{
+    width: 90px;
+    height: 140px;
+}
+
+@media (max-width: 1000px)
+{
+    .cornLogo
+    {
+        position: absolute;
+
+        padding: 0;
+    }
+}
+
+@media (max-width: 640px)
+{
+    .cornLogo img
+    {
+        width: 54px;
+        height: 84px;
+    }
+}
+
+
+
 .greyb
 {
     width: 100%;
@@ -78,6 +105,8 @@ body
 .content h1.tagline
 {
     color: #333;
+    letter-spacing: .3em;
+    font-size: 1.9em;
 }
 
 .wrapper
@@ -98,7 +127,7 @@ body
 .content .logo h1
 {
     font-family: 'BrandonGro';
-    font-size: 42.5px;
+    font-size: 2.5em;
     font-weight: 500;
 
     display: block;
@@ -107,11 +136,20 @@ body
     padding: 0;
 
     text-align: left;
-    letter-spacing: 15.93;
+    letter-spacing: .3em;
     text-transform: uppercase;
+    line-height: 1.25em;
 
     color: #333;
     border-top: #333 solid 1px;
+}
+
+@media (max-width: 640px)
+{
+    .content .logo h1
+    {
+        font-size: 26px;
+    }
 }
 
 .content h1
@@ -130,11 +168,19 @@ body
 
 .content ul li
 {
-    line-height: 1.5;
+    line-height: 1.95em;
 
     padding: 10 0 10 0;
 
     text-align: left;
+}
+
+@media (max-width: 640px)
+{
+    .content ul li
+    {
+        font-size: 16px;
+    }
 }
 
 .content ul li span
@@ -145,18 +191,27 @@ body
 p
 {
     font: normal 400 16px 'AvenirNext',sans-serif;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 40px;
-    line-height: 1.5;
+    line-height: 1.95em;
 
     list-style-type: none;
 
     text-align: left;
 }
 
+@media (max-width: 640px)
+{
+    p
+    {
+        font-size: 16px;
+    }
+}
+
 .menuSec
 {
+    margin: 0 127px 0 127px;
     padding: 30;
 }
 
@@ -170,19 +225,43 @@ p
     margin: 0;
     padding: 0 10 0 10;
 
-    transition-duration: 1s;
+    transition: ease .2s;
     text-decoration: none;
-    letter-spacing: 5.76px;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
 
     color: #fff;
     color: #333;
-    border-bottom: #191919;
+    border-bottom: solid 2px #fff;
 }
+
+@media (max-width: 640px)
+{
+    .menuSec
+    {
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .menuSec a
+    {
+        display: block;
+
+        margin-right: 55%;
+        margin-bottom: 5px;
+        padding: 0;
+
+        text-align: left;
+    }
+    .menuSec p
+    {
+        display: none;
+    }
+}
+
 
 .menuSec a:hover
 {
-    border-bottom: solid 2px #fff;
+    border-bottom: solid 2px #333;
 }
 
 .bottomtag
@@ -216,6 +295,30 @@ p
     width: 25%;
 
     background-color: #333;
+}
+
+@media (max-width: 1400px) and (min-width: 1001px)
+{
+    .gridBox
+    {
+        width: 33.3333333333%;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 701px)
+{
+    .gridBox
+    {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .gridBox
+    {
+        width: 100%;
+    }
 }
 
 .gridOver
@@ -274,10 +377,13 @@ p
 
     width: 100%;
     height: auto;
+
+    transition-timing-function: ease-in-out;
+    transition-duration: .4s;
 }
 
 .gridBox a img
 {
-    width: 100%;
-    height: auto;
+    width: 101%;
+    margin-bottom: -2px;
 }
