@@ -76,9 +76,9 @@ header {
   .photoheader:hover {
     background: #ec8b60; }
 
-.developmentheader {
+.workheader {
   transition-duration: .75s; }
-  .developmentheader:hover {
+  .workheader:hover {
     background: rgba(215, 217, 242, 0.6); }
 
 .contactheader {
@@ -167,21 +167,21 @@ header {
   #about .sec-intro h2 {
     color: #a1a1ab; }
 
-/*-----------------------------development-----------------------------*/
-#development {
+/*-----------------------------work-----------------------------*/
+#work {
   background: #d7d9f2; }
-  #development .sec-head {
+  #work .sec-head {
     color: #464242; }
-  #development .sec-intro {
+  #work .sec-intro {
     clear: both;
     color: #464242;
     background: #d7d9f2; }
-  #development .grid-box {
+  #work .grid-box {
     position: relative;
     float: left;
     width: 50%;
     background: #333; }
-    #development .grid-box .box-caption {
+    #work .grid-box .box-caption {
       font-weight: 400;
       position: absolute;
       top: 50%;
@@ -192,30 +192,30 @@ header {
       margin-top: -140px;
       text-align: center;
       color: white; }
-      #development .grid-box .box-caption p {
+      #work .grid-box .box-caption p {
         font-size: 30px;
         margin: auto;
         padding: 0 5% 0 5%;
         text-align: center;
         letter-spacing: 4;
         text-transform: uppercase; }
-      #development .grid-box .box-caption ul {
+      #work .grid-box .box-caption ul {
         padding: 0 10% 0 10%; }
-        #development .grid-box .box-caption ul li {
+        #work .grid-box .box-caption ul li {
           font-size: 13px;
           line-height: 1.5;
           text-align: left;
           letter-spacing: 3; }
-    #development .grid-box a {
+    #work .grid-box a {
       display: block;
       transition-duration: .75s;
       color: orange; }
-      #development .grid-box a img {
+      #work .grid-box a img {
         width: 100%; }
-      #development .grid-box a:hover {
+      #work .grid-box a:hover {
         opacity: .1; }
-    #development .grid-box:hover .box-caption,
-    #development .grid-box:hover .box-content {
+    #work .grid-box:hover .box-caption,
+    #work .grid-box:hover .box-content {
       visibility: visible; }
 
 /*-----------------------------CONTACT---------------------------------*/
@@ -270,10 +270,10 @@ header {
 
 /*----------------------MEDIA QUERIES-----------------------------*/
 @media (max-width: 1200px) and (min-width: 1001px) {
-  #development .grid-box .box-caption p {
+  #work .grid-box .box-caption p {
     font-size: 25px;
     letter-spacing: 4; }
-  #development .grid-box .box-caption ul li {
+  #work .grid-box .box-caption ul li {
     font-size: 12px;
     letter-spacing: 2; } }
 @media (max-width: 1000px) and (min-width: 851px) {
@@ -282,12 +282,12 @@ header {
     font-size: 20px;
     line-height: 32px; }
 
-  #development .grid-box {
+  #work .grid-box {
     width: 100%; }
-    #development .grid-box .box-caption p {
+    #work .grid-box .box-caption p {
       font-size: 40px;
       letter-spacing: 5; }
-    #development .grid-box .box-caption ul li {
+    #work .grid-box .box-caption ul li {
       font-size: 17px;
       letter-spacing: 4; }
 
@@ -305,11 +305,11 @@ header {
     font-size: 13px;
     line-height: 24px; }
 
-  #development .box-caption li {
+  #work .box-caption li {
     font-size: 20px; }
-  #development .box-head {
+  #work .box-head {
     font-size: 30px; }
-  #development .grid-box {
+  #work .grid-box {
     width: 100%; }
 
   #contact .fa {
@@ -407,18 +407,18 @@ header {
     font-size: 30px;
     visibility: hidden; }
 
-  #development .grid .grid-box {
+  #work .grid .grid-box {
     width: 100%; }
-    #development .grid .grid-box .box-caption {
+    #work .grid .grid-box .box-caption {
       position: absolute;
       top: 0;
       margin: 0;
       padding-top: 5%; }
-      #development .grid .grid-box .box-caption p {
+      #work .grid .grid-box .box-caption p {
         font-size: 15px; }
-      #development .grid .grid-box .box-caption .box-head {
+      #work .grid .grid-box .box-caption .box-head {
         font-size: 15px; }
-      #development .grid .grid-box .box-caption ul li {
+      #work .grid .grid-box .box-caption ul li {
         font-size: 10px; }
 
   #contact .conCon {

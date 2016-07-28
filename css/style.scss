@@ -131,7 +131,7 @@ header
     }
 }
 
-.developmentheader
+.workheader
 {
     transition-duration: .75s;
     &:hover
@@ -286,9 +286,9 @@ header
 }
 
 
-/*-----------------------------development-----------------------------*/
+/*-----------------------------work-----------------------------*/
 
-#development
+#work
 {
     background: #d7d9f2;
     .sec-head
@@ -470,7 +470,7 @@ header
 
 @media (max-width: 1200px) and (min-width: 1001px)
 {
-    #development
+    #work
     {
         .grid-box
         {
@@ -504,7 +504,7 @@ header
         font-size: 20px;
         line-height: 32px;
     }
-    #development
+    #work
     {
         .grid-box
         {
@@ -555,7 +555,7 @@ header
         font-size: 13px;
         line-height: 24px;
     }
-    #development
+    #work
     {
         .box-caption li
         {
@@ -727,7 +727,7 @@ header
 
         visibility: hidden;
     }
-    #development
+    #work
     {
         .grid
         {
