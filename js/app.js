@@ -1,35 +1,35 @@
 
 
 $(document).ready(function(){
-    $(".fade").css('opacity',0).delay(500).animate({opacity:1}, 1000);
+    $(".fade").css('opacity',0).delay(1000).animate({opacity:1}, 1000);
 });
 
 $(document).ready(function(){
-    $(".fade2").css('opacity',0).delay(1500).animate({opacity:1}, 1000);
+    $(".fade2").css('opacity',0).delay(2000).animate({opacity:1}, 1000);
 });
 
 $(document).ready(function(){
-    $(".fade3").css('opacity',0).delay(2500).animate({opacity:1}, 1000);
+    $(".fade3").css('opacity',0).delay(3000).animate({opacity:1}, 1000);
 });
 
 $(document).ready(function(){
-    $(".fade4").css('opacity',0).delay(3500).animate({opacity:1}, 1000);
+    $(".fade4").css('opacity',0).delay(4000).animate({opacity:1}, 1000);
 });
 
 $(document).ready(function(){
-    $(".fadeNav").css('opacity',0).delay(4000).animate({opacity:1}, 1000);
+    $(".fadeNav").css('opacity',0).delay(5000).animate({opacity:1}, 1000);
 });
 
 $(document).ready(function(){
-    $(".fade6").css('opacity',0).delay(5000).animate({opacity:1}, 1000);
+    $(".fade6").css('opacity',0).delay(6000).animate({opacity:1}, 1000);
 });
 
 $(document).ready(function(){
-    $(".fade7").css('opacity',0).delay(6000).animate({opacity:1}, 1000);
+    $(".fade7").css('opacity',0).delay(7000).animate({opacity:1}, 1000);
 });
 
 $(document).ready(function(){
-    $(".fade8").css('opacity',0).delay(4500).animate({opacity:1}, 1000);
+    $(".fade8").css('opacity',0).delay(8000).animate({opacity:1}, 1000);
 });
 
 $(document).ready(function(){
