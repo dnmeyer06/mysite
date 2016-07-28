@@ -221,7 +221,8 @@ header {
 /*-----------------------------CONTACT---------------------------------*/
 #contact {
   height: 502;
-  background-color: #fcfcfc; }
+  background-color: #fcfcfc;
+  clear: both; }
   #contact .sec-head {
     text-align: left;
     color: #333; }
@@ -251,7 +252,7 @@ header {
     font-size: 80px;
     padding: 0 20 40 20; }
   #contact .fa-linkedin-square {
-    color: #ec8b60; }
+    color: #1437f9; }
   #contact .fa-facebook-square {
     color: #064767; }
   #contact .fa-envelope {
