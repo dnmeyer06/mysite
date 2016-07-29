@@ -89,9 +89,6 @@ body
 
 .greyb
 {
-    position: absolute;
-    bottom: 0;
-
     width: 100%;
 
     background-color: #f2f2f2;
@@ -99,8 +96,7 @@ body
 
 .content
 {
-    position: absolute;
-    bottom: 0;
+    position: relative;
 
     min-height: 100vh;
     padding: 0;
@@ -117,9 +113,6 @@ body
 
 .wrapper
 {
-    position: absolute;
-    bottom: 0;
-
     max-width: 704px;
     margin-right: auto;
     margin-left: auto;
@@ -286,7 +279,6 @@ p
     display: block;
 
     width: 100%;
-    height: 100%;
     margin: 0;
 
     background: #333;
@@ -402,26 +394,29 @@ p
     clear: both;
 
     width: 100%;
+    padding-bottom: 52px;
 
-    background: #333;
+    background: #181818;
 }
 
 .contactCont
 {
+    width: 580px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 52px;
-    width: 539px;
 }
 
 #contact h1
 {
+    font-family: 'BrandonGro';
     font-size: 24px;
 
     margin: 0;
     padding-bottom: 34px;
 
     letter-spacing: 5.76px;
+    font-weight: normal;
 
     color: #cac9c9;
 }
@@ -430,15 +425,74 @@ p
 {
     font: normal 400 16px 'avenir next',sans-serif;
     font-size: 18px;
+    font-weight: 200;
 
+    display: inline-block;
+
+    width: 256px;
     margin-bottom: 54px;
     padding-bottom: 7px;
-    outline: none;
 
-    color: #cccccc;
+    color: #ccc;
+    border-top: none;
+    border-right: none;
     border-bottom: 1px solid #666;
+    border-left: none;
     border-radius: 0;
+    outline: none;
     background: none;
-    display: inline-block;
-    width: 258px;
+}
+
+#contact .left
+{
+    margin-right: 31px;
+}
+
+input:focus::-webkit-input-placeholder
+{
+    transition: opacity .25s;
+
+    opacity: 0;
+}
+
+textarea
+{
+    font: normal 400 16px 'avenir next',sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+
+    width: 547px;
+    margin-bottom: 54px;
+    padding-bottom: 7px;
+
+    color: #ccc;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #666;
+    border-left: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+}
+
+textarea:focus::-webkit-input-placeholder
+{
+    transition: opacity .25s;
+
+    opacity: 0;
+}
+
+.submit
+{
+    font-family: 'BrandonGro';
+    font-size: 16px;
+
+    letter-spacing: .2em;
+    text-transform: uppercase;
+
+    color: #ccc;
+    border: none;
+    outline: none;
+    outline-color: rgb(204, 204, 204);
+    background: none;
 }

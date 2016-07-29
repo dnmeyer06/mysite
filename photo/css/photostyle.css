@@ -6,12 +6,6 @@ body {
 #bHeight {
   max-height: 100vh; }
 
-#slide {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin: 0 20px 20px 0; }
-
 #landing {
   position: absolute;
   z-index: 10;
@@ -22,6 +16,17 @@ body {
   background-image: url("../images/background4.jpg");
   background-position: center;
   background-size: cover; }
+  #landing button {
+    border: none;
+    background: transparent; }
+    #landing button:hover {
+      cursor: pointer; }
+    #landing button img {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 200px;
+      height: 200px; }
   #landing .landCont {
     position: absolute;
     top: 50%;
@@ -102,5 +107,33 @@ body {
       .gallery .grid .grid-box:hover .box-caption,
       .gallery .grid .grid-box:hover .box-content {
         visibility: visible; }
+
+@media (max-width: 1000px) {
+  .gallery .grid .grid-box {
+    width: 50%; } }
+@media (max-width: 680px) {
+  #landing button img {
+    width: 100px;
+    height: 100px; }
+  #landing .landCont {
+    padding: 30% 0 0 0; }
+    #landing .landCont h1 {
+      font-size: 25px;
+      padding: 5% 5% 5% 5%; }
+  #landing .title {
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    padding: 0 0 5% 2%; }
+    #landing .title h2 {
+      font-size: 25px;
+      margin: 0;
+      padding-bottom: 5%; }
+    #landing .title .cap {
+      font-size: 15px;
+      margin: 0; }
+
+  .gallery .grid .grid-box {
+    width: 100%; } }
 
 /*# sourceMappingURL=photostyle.css.map */
