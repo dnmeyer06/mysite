@@ -6,7 +6,7 @@ body
 
     margin: 0;
 
-    background: #51676d;
+    background: #333;
 }
 
 #bHeight
@@ -187,9 +187,119 @@ body
     }
 }
 
+.slideShow {
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    display: none;
+
+    img {
+        width: 100%
+
+    }
+    button
+    {
+        border: none;
+        background: transparent;
+        z-index: 1000;
+        &:hover
+        {
+            cursor: pointer;
+        }
+        img
+        {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+
+            width: 200px;
+            height: 200px;
+            z-index: 1000;
+        }
+    }
+    .grid
+    {
+        overflow: auto;
+
+        width: 100%;
+
+        background: #333;
+        .grid-box
+        {
+            position: relative;
+
+            float: left;
+
+            width: 33.3333333%;
+            height: auto;
+            margin-bottom: -4px;
+            .box-caption
+            {
+                font-weight: 400;
+
+                position: absolute;
+                top: 50%;
+                right: 0;
+                left: 0;
+
+                display: block;
+                visibility: hidden;
+
+                margin-top: -47px;
+
+                text-align: center;
+
+                color: #333;
+                p
+                {
+                    font-size: 40px;
+
+                    margin: auto;
+
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+            a
+            {
+                display: block;
+
+                transition-duration: .75s;
+                img
+                {
+                    width: 100%;
+                    height: auto;
+                }
+                &:hover
+                {
+                    opacity: .1;
+                }
+            }
+            &:hover
+            {
+                .box-caption,
+                .box-content
+                {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1000px)
 {
     .gallery
+    {
+        .grid
+        {
+            .grid-box
+            {
+                width: 50%;
+            }
+        }
+    }
+    .slideShow
     {
         .grid
         {
@@ -246,6 +356,16 @@ body
         }
     }
     .gallery
+    {
+        .grid
+        {
+            .grid-box
+            {
+                width: 100%;
+            }
+        }
+    }
+    .slideShow
     {
         .grid
         {

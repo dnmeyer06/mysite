@@ -1,7 +1,7 @@
 body {
   font-family: raleway;
   margin: 0;
-  background: #51676d; }
+  background: #333; }
 
 #bHeight {
   max-height: 100vh; }
@@ -108,8 +108,69 @@ body {
       .gallery .grid .grid-box:hover .box-content {
         visibility: visible; }
 
+.slideShow {
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  display: none; }
+  .slideShow img {
+    width: 100%; }
+  .slideShow button {
+    border: none;
+    background: transparent;
+    z-index: 1000; }
+    .slideShow button:hover {
+      cursor: pointer; }
+    .slideShow button img {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      width: 200px;
+      height: 200px;
+      z-index: 1000; }
+  .slideShow .grid {
+    overflow: auto;
+    width: 100%;
+    background: #333; }
+    .slideShow .grid .grid-box {
+      position: relative;
+      float: left;
+      width: 33.3333333%;
+      height: auto;
+      margin-bottom: -4px; }
+      .slideShow .grid .grid-box .box-caption {
+        font-weight: 400;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        display: block;
+        visibility: hidden;
+        margin-top: -47px;
+        text-align: center;
+        color: #333; }
+        .slideShow .grid .grid-box .box-caption p {
+          font-size: 40px;
+          margin: auto;
+          text-align: center;
+          text-transform: uppercase; }
+      .slideShow .grid .grid-box a {
+        display: block;
+        transition-duration: .75s; }
+        .slideShow .grid .grid-box a img {
+          width: 100%;
+          height: auto; }
+        .slideShow .grid .grid-box a:hover {
+          opacity: .1; }
+      .slideShow .grid .grid-box:hover .box-caption,
+      .slideShow .grid .grid-box:hover .box-content {
+        visibility: visible; }
+
 @media (max-width: 1000px) {
   .gallery .grid .grid-box {
+    width: 50%; }
+
+  .slideShow .grid .grid-box {
     width: 50%; } }
 @media (max-width: 680px) {
   #landing button img {
@@ -134,6 +195,9 @@ body {
       margin: 0; }
 
   .gallery .grid .grid-box {
+    width: 100%; }
+
+  .slideShow .grid .grid-box {
     width: 100%; } }
 
 /*# sourceMappingURL=photostyle.css.map */
