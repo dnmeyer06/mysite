@@ -6,7 +6,7 @@ body
 
     margin: 0;
 
-    background: #333;
+    background: white;
 }
 
 #bHeight
@@ -35,14 +35,19 @@ body
         {
             cursor: pointer;
         }
-        img
+        .fa
         {
             position: absolute;
-            right: 10px;
-            bottom: 10px;
+            z-index: 2000;
+            right: 20px;
+            bottom: 20px;
+            font-size: 15em;
+            color: #e4e4e4;
+            &:hover
+            {
+                color: #b7b7b7;
+            }
 
-            width: 200px;
-            height: 200px;
         }
     }
     .landCont
@@ -187,34 +192,41 @@ body
     }
 }
 
-.slideShow {
-    width: 100%;
-    height: auto;
+.slideShow
+{
     z-index: 100;
+
     display: none;
 
-    img {
-        width: 100%
-
+    width: 100%;
+    height: auto;
+    img
+    {
+        width: 100%;
     }
     button
     {
+        z-index: 1000;
+
         border: none;
         background: transparent;
-        z-index: 1000;
         &:hover
         {
             cursor: pointer;
         }
-        img
+        i
         {
             position: fixed;
-            right: 10px;
-            bottom: 10px;
-
-            width: 200px;
-            height: 200px;
             z-index: 1000;
+            
+            right: 20px;
+            bottom: 20px;
+            font-size: 15em;
+            color: #333;
+            &:hover
+            {
+                color: #b7b7b7;
+            } 
         }
     }
     .grid
@@ -223,7 +235,7 @@ body
 
         width: 100%;
 
-        background: #333;
+        background: white;
         .grid-box
         {
             position: relative;
@@ -317,7 +329,7 @@ body
     {
         button
         {
-            img
+            i
             {
                 width: 100px;
                 height: 100px;

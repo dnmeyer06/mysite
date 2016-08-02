@@ -35,7 +35,39 @@ var photos = {
 	"https://lh3.googleusercontent.com/-fWCmxSZPqxs/V59rFteJZoI/AAAAAAAANK4/xBkZvzyJYOcNDO4rEX2Zv79ekdb-ZfH2QCCo/s800/DSCF1175.JPG",
 	"https://lh3.googleusercontent.com/-b1sj4PssHnc/V59rFkn1ePI/AAAAAAAANK0/zKS1U6AkxBQS0bAxWI6lGw4UNPO250BtgCCo/s800/DSCF1309.JPG",
 	"https://lh3.googleusercontent.com/-k4A7guw9oXk/V59rFiOAMEI/AAAAAAAANK0/TethR1xSdU8-JtPiZcbolIGyPPuR6KL2ACCo/s800/DSCF1306.JPG"
+	],
+
+	vida: [
+	"https://lh3.googleusercontent.com/-1EhMqF0wx18/V6Dcsh7CmMI/AAAAAAAANQ4/ScQYCCq_qY0IndCx-yWQEiTSMC75t3X-wCCo/s800/DSCF2771.JPG",
+	"https://lh3.googleusercontent.com/-CzLQfKgFDA0/V6DdLoeJGrI/AAAAAAAANRI/Lq_2-qYEaMoYU-fAoB_c5yeCj-h_iXPPQCCo/s800/DSCF2521.JPG",
+	"https://lh3.googleusercontent.com/-9SYCwpAlpyM/V6DdMn11JkI/AAAAAAAANRg/sW7XNlrGXf0y2LTCzBJy2kgKoo8WHj6sACCo/s800/DSCF2532.JPG",
+	"https://lh3.googleusercontent.com/-un79P49Ufro/V6Dcr56UyvI/AAAAAAAANQ4/9PVajO6TvnYk6jkaBMistZERhkCkGQM6gCCo/s800/DSCF2767.JPG",
+	"https://lh3.googleusercontent.com/-JyCH7yqF51Q/V6DeVpL4Q8I/AAAAAAAANTs/bAwvmHdhYN4YtYcFHO1CUrUhkfcUJtQgACCo/s800/DSCF0066.JPG",
+	"https://lh3.googleusercontent.com/-tY3NgADDbQg/V6DezoabNiI/AAAAAAAANUo/IsMW3y3dPzUh0vtVOl0Ky6wBTgEU-atuQCCo/s800/DSCF0208.JPG",
+	"https://lh3.googleusercontent.com/-lP0oj0PXyu8/V6DfTA9dLcI/AAAAAAAANVY/tRU197OtNuksWOhclNQsVHIwX6VMIkkHACCo/s800/DSCF0607.JPG",
+	"https://lh3.googleusercontent.com/-_w98yJcPybg/V6DfUQaI0XI/AAAAAAAANVk/o5gJIyMYwTAJ4siaga2m3EWUe23jYpEvACCo/s800/DSCF0612.JPG",
+	"https://lh3.googleusercontent.com/-vV12al0WjEc/V6Dcw8HD8xI/AAAAAAAANT0/A613-749tX4nrpcGPksXdUh23UTjng3_QCCo/s800/DSCF2790.JPG"
+
+	],
+
+	paonia: [
+	"https://lh3.googleusercontent.com/-hDYcdevC_gI/VxWUcUO8zRI/AAAAAAAANMg/v_seWw1hxXwd_MNLWF808b_qvLv6kfV6ACCo/s800/DSCF2243.JPG",
+	"https://lh3.googleusercontent.com/-ILFbsnyWUDU/VxWUcY--H1I/AAAAAAAANMg/rW5fWkpqKpk6fRlHOQ29bGyR-ZmYz9zXwCCo/s800/DSCF1995.JPG",
+	"https://lh3.googleusercontent.com/-AS_ByRv268c/VxWUcRTsOCI/AAAAAAAANMg/46M3xWZ2tj4eTVWf8ISVt44xuh2cB6RjACCo/s800/DSCF2002.JPG",
+	"https://lh3.googleusercontent.com/-zQImwg-5a-4/VxWUcQlikQI/AAAAAAAANMg/qjiB8tHNftEDU6SpwNZCOvIZgwoPpzxawCCo/s800/DSCF2026.JPG",
+	"https://lh3.googleusercontent.com/-Jbh5ApJeuTY/VxWUcUssVSI/AAAAAAAANMg/ZOJTPVjmagc5gZr-CJkwZZ3KCaPYDaP_QCCo/s800/DSCF2101.JPG",
+	"https://lh3.googleusercontent.com/-5-yGdLHSP60/VxWUcdctVxI/AAAAAAAANMg/fTJ34Gge_LcA-Yp6S5hd-qfWsx3kAecpQCCo/s800/DSCF2121.JPG",
+	"https://lh3.googleusercontent.com/--LQ7tgV1TuI/VxWUcV6fRRI/AAAAAAAANMg/IDNhKhFCVv0EO0ZlaQa_jNNLA38Q03GwQCCo/s800/DSCF2135.JPG",
+	"https://lh3.googleusercontent.com/-_jPfAmTiImY/VxWUcew_gRI/AAAAAAAANMg/Ch_dlXNh8Bcjt0J3b3l6PZE-_ANDjGZ9ACCo/s800/DSCF2159.JPG",
+	"https://lh3.googleusercontent.com/-4CA6gM0VkQg/VxWUcacJJJI/AAAAAAAANMg/1yX3cWVrz1ccSgTaUujmrO-w5XzyIAoHgCCo/s800/DSCF2170.JPG",
+	"https://lh3.googleusercontent.com/-x120dsnbU5Y/VxWUcZnurmI/AAAAAAAANMg/0I_R7NbRJrct2hZNNPd7W-j5Cnl9vQVPACCo/s800/DSCF2179.JPG",
+	"https://lh3.googleusercontent.com/-poJd-2Fn50Y/VxWUcYKdd4I/AAAAAAAANMg/KToiwJ0H_S4eKPxGfCv0aKAaxvMKZzqyACCo/s800/DSCF2193.JPG",
+	"https://lh3.googleusercontent.com/-SKn85Az9c_8/VxWUcQArEdI/AAAAAAAANMg/M_gzqBKLDAEEmI-Od8f7qWt8ZJFcNDn7QCCo/s800/DSCF2222.JPG",
+	"https://lh3.googleusercontent.com/-SBUnMrEXBvk/VxWUcZb8ceI/AAAAAAAANMg/M5YnM12uMwkhCahGdKzkTtpTaZIJSe8AgCCo/s800/DSCF2227.JPG",
+	"https://lh3.googleusercontent.com/-DJ_10Rey8yg/VxWUcdm5veI/AAAAAAAANMg/XyKYQRS4hRsVWRAdvJpbnVeRphFITWsSgCCo/s800/DSCF2345.JPG"
+
 	]
+	
 }
 
 $( ".grid-box" ).click(function() {
@@ -46,7 +78,7 @@ $( ".grid-box" ).click(function() {
 	var location = $(this).data('place');
 	var photosArray = photos[location];
 	for (i = 0; i < photosArray.length; i++) {
-		$( "#indGrid" ).append( "<div class='grid-box' id='ind'><img src=" + photosArray[i] + "></div>")
+		$( "#indGrid" ).append( "<div class='grid-box resizableImage' id='ind'><img src=" + photosArray[i] + "></div>")
 	}
 });
 
@@ -57,3 +89,14 @@ $("#back").click(function() {
 	$( "#landing").css("display", "block");
 	$("#indGrid").empty();
 });
+
+
+
+$('.resizableImage').hover(makeBigger, returnToOriginalSize);
+
+function makeBigger() {
+    $(this).css({height: '+=10%', width: '+=10%'});
+}
+function returnToOriginalSize() {
+    $(this).css({height: "", width: ""});
+}
