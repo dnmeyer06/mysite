@@ -71,10 +71,22 @@ var photos = {
 	"https://lh3.googleusercontent.com/-SKn85Az9c_8/VxWUcQArEdI/AAAAAAAANMg/M_gzqBKLDAEEmI-Od8f7qWt8ZJFcNDn7QCCo/s800/DSCF2222.JPG",
 	"https://lh3.googleusercontent.com/-SBUnMrEXBvk/VxWUcZb8ceI/AAAAAAAANMg/M5YnM12uMwkhCahGdKzkTtpTaZIJSe8AgCCo/s800/DSCF2227.JPG",
 	"https://lh3.googleusercontent.com/-DJ_10Rey8yg/VxWUcdm5veI/AAAAAAAANMg/XyKYQRS4hRsVWRAdvJpbnVeRphFITWsSgCCo/s800/DSCF2345.JPG"
+	],
 
+	bryce: [
+	"https://lh3.googleusercontent.com/-mOBAnbD4jkI/V6NomuNUOOI/AAAAAAAANeE/VdA6Onmfp6ov8UATKCMSkFe619_MHknNwCCo/s800/IMG_1885.JPG",
+	"https://lh3.googleusercontent.com/-Cutjz9Y3H3c/V6NonRuXTeI/AAAAAAAANeE/glDfMgiKR-k0TMICLz_SBWgKu2I7jX5RACCo/s800/IMG_1887.JPG",
+	"https://lh3.googleusercontent.com/-4_A0cq50SjE/V6NoqL24jFI/AAAAAAAANeE/TfGBPRHm8CkUoNLkx6MmrvJ-j-3JiYtGwCCo/s800/IMG_1897.JPG",
+	"https://lh3.googleusercontent.com/-Cyrglk_DYAA/V6NotHyvcuI/AAAAAAAANeE/N5WVvVRGP-oT5wBTUsOu4SprjXzPc-8EwCCo/s800/IMG_1906.JPG",
+	"https://lh3.googleusercontent.com/-4IC-ik8RqJU/V6No2KZXvxI/AAAAAAAANeE/Na15tn9fay8P42pOCs5HI5nwz1kRONTmgCCo/s800/IMG_1937.JPG",
+	"https://lh3.googleusercontent.com/-iRGOQYw7Ktg/V6No5BJ2pMI/AAAAAAAANeE/RF-GNZn9rzkeBpM6eTPn5MuLhvC16c9_gCCo/s800/IMG_1946.JPG",
+	"https://lh3.googleusercontent.com/-R31XkdbxZ3Q/V6No8sbci3I/AAAAAAAANeE/cQNY8wgBxVkZ_QXu5dvLsRhHkRaNE95YgCCo/s800/IMG_1957.JPG",
+	"https://lh3.googleusercontent.com/-8E3Vwg7cOZ0/V6No-QZKEwI/AAAAAAAANeE/LaG9vwtb4A0v1F5nWiaPufEYNGLuDxp7QCCo/s800/IMG_1961.JPG"
+	],
+	Huacachina: [
 	]
 	
-}
+};
 
 $( ".grid-box" ).click(function() {
 	$( "#landing").css("display", "none");

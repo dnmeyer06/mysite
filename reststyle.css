@@ -18,6 +18,8 @@ body
 
 .landing
 {
+    position: relative;
+
     height: 100vh;
 
     background: linear-gradient(
@@ -169,6 +171,29 @@ nav ul li a:hover
     padding: 0 30 0 30;
 
     color: white;
+}
+
+.down
+{
+    font-size: 6em;
+
+    position: absolute;
+    z-index: 300;
+    right: 0;
+    bottom: .5em;
+    left: 0;
+
+    margin: auto;
+
+    text-align: center;
+
+    color: white;
+    background
+}
+
+.down:hover
+{
+    color: #757575;
 }
 
 
