@@ -100,15 +100,14 @@ body
 
     min-height: 100vh;
     padding: 0;
+    margin-bottom: -10px;
 }
 
 .content h1.tagline
 {
-    font-size: 1.9em;
-
-    letter-spacing: .3em;
-
     color: #333;
+    letter-spacing: .3em;
+    font-size: 1.9em;
 }
 
 .wrapper
@@ -116,7 +115,7 @@ body
     max-width: 704px;
     margin-right: auto;
     margin-left: auto;
-    padding: 10px;
+    padding: 10;
 }
 
 .content .logo
@@ -131,7 +130,6 @@ body
     font-family: 'BrandonGro';
     font-size: 2.5em;
     font-weight: 500;
-    line-height: 1.25em;
 
     display: block;
 
@@ -141,6 +139,7 @@ body
     text-align: left;
     letter-spacing: .3em;
     text-transform: uppercase;
+    line-height: 1.25em;
 
     color: #333;
     border-top: #333 solid 1px;
@@ -229,7 +228,7 @@ p
 
     transition: ease .2s;
     text-decoration: none;
-    letter-spacing: .25em;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
 
     color: #fff;
@@ -269,7 +268,7 @@ p
 .bottomtag
 {
     margin: 0;
-    padding: 5em 0 1em 0;
+    padding: 3em 0 1em 0;
 
     text-align: center;
     letter-spacing: .5;

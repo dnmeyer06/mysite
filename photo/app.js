@@ -11,30 +11,36 @@ $( "#slide" ).click(function() {
 
 var photos = {
 	seattle: [
-	"https://lh3.googleusercontent.com/-BWQhKet3qZk/VxWunrlfEkI/AAAAAAAAFZM/WyBLanjTBFcPPbo3X10Iu7OXS4UZV8p9ACCo/s800/DSCF1648.JPG",
-	"https://lh3.googleusercontent.com/-jiNM4vBJ1R4/VxWuntJp3FI/AAAAAAAAFX0/MydosI7QZLIymuzpduOvprHTQHznfHNVQCCo/s800/DSCF1797.JPG", 
-	"https://lh3.googleusercontent.com/-kNDgb74t_xk/VxWunonHVYI/AAAAAAAAFZo/0LMebf1mLIErpqp0H_4PcUUKCdB-4zHIgCCo/s800/DSCF1581.JPG",
-	"https://lh3.googleusercontent.com/-a24Grenty7U/VxWunluMB7I/AAAAAAAAFYM/8wZSv9xTQFUWtFAP1MSVwLEaaB1N1l5DgCCo/s800/DSCF1727.JPG",
-	"https://lh3.googleusercontent.com/-2lDdhd242DU/VxWunrTtFbI/AAAAAAAAFXM/qx0Ng0xqpvkcsPEQJLIc7ZCZ3vtZnh3gQCCo/s800/DSCF1849.JPG",
-	"https://lh3.googleusercontent.com/-Op1GhrXO5pU/VxWunh10jpI/AAAAAAAAFZE/ARqNGbhl1z8UQJJhZ3mwlM_aHor76cAFQCCo/s800/DSCF1673.JPG",
-	"https://lh3.googleusercontent.com/-BdSwVafDPVQ/VxWunulP7WI/AAAAAAAAFZE/9mliyNJxUnszbETI8h0uq0wYzWG-ZFmBQCCo/s800/DSCF1676.JPG",
-	"https://lh3.googleusercontent.com/-ZDF1qf1Cy3w/VxWunubN7pI/AAAAAAAAFXk/Yc6GNeqqGJo9GqMGOOSaeXfoIR6FiXXkQCCo/s800/DSCF1815.JPG",
-	"https://lh3.googleusercontent.com/-WdM-50yoB5g/VxWungW8h7I/AAAAAAAAFX0/c4iDpuISAukwRSfls7v7fwYTQPokXNGnQCCo/s800/DSCF1799.JPG",
-	"https://lh3.googleusercontent.com/-id1BVs9ncQw/VxWunrSBhlI/AAAAAAAAFZ4/9Ufq3MRZ9CkgZ1pRrUSUfam1CkBXBq12QCCo/s800/DSCF1564.JPG",
-	"https://lh3.googleusercontent.com/-Bw3WTzDgt0s/VxWunt1yqHI/AAAAAAAAFZo/G5ruEnCi2ukitVByhcV-LQbh_WyMV3kvwCCo/s800/DSCF1600.JPG",
-	"https://lh3.googleusercontent.com/-yxSNUoT6T_E/VxWunq1DfQI/AAAAAAAAFZo/ux0MX_EvdWIyCq3HGzUCkvUZ3XKkQKFhgCCo/s800/DSCF1594.JPG"
+	"https://lh3.googleusercontent.com/-id1BVs9ncQw/VxWunrSBhlI/AAAAAAAANOQ/Sn_bg2yNlk4gf18YoIBIaPp3DHAyUmCFACCo/s800/DSCF1564.JPG",
+	"https://lh3.googleusercontent.com/-OZs7f53WtfQ/VxWunrUDBGI/AAAAAAAANOQ/KVc-mcDICmUBAOcZtmjIYQQPyjyiKiF8wCCo/s800/DSCF1577.JPG", 
+	"https://lh3.googleusercontent.com/-kNDgb74t_xk/VxWunonHVYI/AAAAAAAANOQ/JRvAGwPlHFEgnUzVMV3FUTfeO1XyLSe4wCCo/s800/DSCF1581.JPG",
+	"https://lh3.googleusercontent.com/-yxSNUoT6T_E/VxWunq1DfQI/AAAAAAAANOQ/mX_BLLeh7BA2L-tVnVOFnaZzgNDk8vZnACCo/s800/DSCF1594.JPG",
+	"https://lh3.googleusercontent.com/-Bw3WTzDgt0s/VxWunt1yqHI/AAAAAAAANOQ/oVoLmaZYVFYbikDORurKgLASbC-NuN9hwCCo/s800/DSCF1600.JPG",
+	"https://lh3.googleusercontent.com/-AQLzljF4yXU/VxWuni3InUI/AAAAAAAANOQ/PUJ8no4Bh9cDiZ1b3ikP6uaC0PcwLkSxgCCo/s800/DSCF1669.JPG",
+	"https://lh3.googleusercontent.com/-BdSwVafDPVQ/VxWunulP7WI/AAAAAAAANOQ/8oiNJ25mvyEssdoJNf4WdUXlxyjDhZDWwCCo/s800/DSCF1676.JPG",
+	"https://lh3.googleusercontent.com/-Xuzd6B8wGvM/VxWuniINQgI/AAAAAAAANOQ/YKGj30kvSaoJF9FYhhxYMiSdwAYgFFFOACCo/s800/DSCF1759.JPG",
+	"https://lh3.googleusercontent.com/-Um461YfL_yM/VxWunuUlEaI/AAAAAAAANOQ/khPSV9-TcDYcgToeWwfvjwpk6u6eI-cIACCo/s800/DSCF1794.JPG",
+	"https://lh3.googleusercontent.com/-merH2FrLJlQ/VxWunmQkWHI/AAAAAAAANOQ/u2uKfSfhfOA-dPz7paRaK0NTAzJV0sAbACCo/s800/DSCF1810.JPG",
+	"https://lh3.googleusercontent.com/-ZDF1qf1Cy3w/VxWunubN7pI/AAAAAAAANOQ/FmDBbDMPR8IUnGB_kbDklqwDLEEtoDMcwCCo/s800/DSCF1815.JPG",
+	"https://lh3.googleusercontent.com/-Yiac7UnhUY4/VxWunrrFYvI/AAAAAAAANOQ/YtYCzG7dTAU6qqAs-OfsFUabaJuKUQNAgCCo/s800/DSCF1844.JPG",
+	"https://lh3.googleusercontent.com/-6HjK6uU_J2I/VxWunvIQYuI/AAAAAAAANOQ/zTMwFoL2I4cRaX24evG6Bq2B70Cyu-VpwCCo/s800/DSCF1881.JPG"
 	],
 
 	colombia: [
-	"https://lh3.googleusercontent.com/-8EJ33kXXqmg/V59rFgKscsI/AAAAAAAANK4/OVzGpQAPdWwGaGBVzDeDaDHX65Ssh4prwCCo/s800/DSCF0769.JPG",
-	"https://lh3.googleusercontent.com/-dKET_YYbVZs/V59rFg-dkkI/AAAAAAAANK0/SmEPBVwiUDQ3KoscGAk1yZzUjyUl-r9FQCCo/s800/DSCF1049.JPG",
-	"https://lh3.googleusercontent.com/-dNtFzYIREms/V59rFsw8lWI/AAAAAAAANK8/AzlVO5yxohcjkjFoqbABWNE9JzVsG91ygCCo/s800/DSCF0667.JPG",
-	"https://lh3.googleusercontent.com/-XsaXehfLJBk/V59rFuatF6I/AAAAAAAANK4/EugXJBnKSxg2L70uAoVIIjU3evSDHdY4QCCo/s800/DSCF1054.JPG",
-	"https://lh3.googleusercontent.com/-YP50gtmZd2I/V59rFq5gZVI/AAAAAAAANK4/YWf3o8JN7ZUbjRpExQ2jPOQe-SxNGpsLQCCo/s800/DSCF0890.JPG",
-	"https://lh3.googleusercontent.com/-JfyOR4jQiLc/V59rFsTLdJI/AAAAAAAANK4/voAne8xPABEX-oGo57a6HWJf-h0AInwxgCCo/s800/DSCF0934.JPG",
-	"https://lh3.googleusercontent.com/-fWCmxSZPqxs/V59rFteJZoI/AAAAAAAANK4/xBkZvzyJYOcNDO4rEX2Zv79ekdb-ZfH2QCCo/s800/DSCF1175.JPG",
-	"https://lh3.googleusercontent.com/-b1sj4PssHnc/V59rFkn1ePI/AAAAAAAANK0/zKS1U6AkxBQS0bAxWI6lGw4UNPO250BtgCCo/s800/DSCF1309.JPG",
-	"https://lh3.googleusercontent.com/-k4A7guw9oXk/V59rFiOAMEI/AAAAAAAANK0/TethR1xSdU8-JtPiZcbolIGyPPuR6KL2ACCo/s800/DSCF1306.JPG"
+	"https://lh3.googleusercontent.com/-mHosGtlHK10/V59rFk74IdI/AAAAAAAANOM/8PHsBX0NOJMc7rMGcJeuExKN5MQqEpcCQCCo/s800/DSCF1050.JPG",
+	"https://lh3.googleusercontent.com/-eqWh522oYio/V59rFnfdkII/AAAAAAAANOM/Vzb_kTEQQjgLHgzAwyQoK69ufOL7ma4hACCo/s800/DSCF0663.JPG",
+	"https://lh3.googleusercontent.com/-Nr4huPX063A/V59rFlGtd1I/AAAAAAAANOM/Lo6yVcHsfmYFDwmHQFTcxjR9AzuV--AOgCCo/s800/DSCF0670.JPG",
+	"https://lh3.googleusercontent.com/-7YmAKrju8QY/V59rFg4JegI/AAAAAAAANOM/-E_QA9v_azwk53wtfxSN5kR8fFa2aguzgCCo/s800/DSCF0686.JPG",
+	"https://lh3.googleusercontent.com/-HePbVaqs7Iw/V59rFqOi_DI/AAAAAAAANOM/iuXSJJ6GaNskiFmvFz90MvLDgmcdRpxZACCo/s800/DSCF0684.JPG",
+	"https://lh3.googleusercontent.com/-fIrK7uhvLC4/V59rFg0VvBI/AAAAAAAANOM/z6AOz3xN0cUIge5tXqSZNFr8ZDaCCiLxgCCo/s800/DSCF1059.JPG",
+	"https://lh3.googleusercontent.com/-8EJ33kXXqmg/V59rFgKscsI/AAAAAAAANOM/5xx4OpUNBLUBpjpJMmmGPEX2O0fDL8ReACCo/s800/DSCF0769.JPG",
+	"https://lh3.googleusercontent.com/-XsaXehfLJBk/V59rFuatF6I/AAAAAAAANOM/3gNRbOF6J0wEU_FeJjwumMgpnyC_u_CRQCCo/s800/DSCF1054.JPG",
+	"https://lh3.googleusercontent.com/-trlvjKh4JnQ/V59rFtjj45I/AAAAAAAANOM/KXHGRnZAcIAOxHHGWZ7OSccYd6hn5iL_gCCo/s800/DSCF0887.JPG",
+	"https://lh3.googleusercontent.com/-BdBCLd7FLz4/V59rFik8mtI/AAAAAAAANOM/aoX21bAAIgIkdDyqPuVoZcx0auM5mkMWACCo/s800/DSCF0897.JPG",
+	"https://lh3.googleusercontent.com/-JfyOR4jQiLc/V59rFsTLdJI/AAAAAAAANOM/dMYt0vou5A4FeD2ozveAV1AFI6G0BxM4ACCo/s800/DSCF0934.JPG",
+	"https://lh3.googleusercontent.com/-k4A7guw9oXk/V59rFiOAMEI/AAAAAAAANOM/6p5EgctUUXs8-Yj_Tl26P95SJ4Hy4QUZQCCo/s800/DSCF1306.JPG",
+	"https://lh3.googleusercontent.com/-b1sj4PssHnc/V59rFkn1ePI/AAAAAAAANOM/nJwemyb8Mzsw1xpNVu2RjWZG5RpSMTuOgCCo/s800/DSCF1309.JPG",
+	"https://lh3.googleusercontent.com/-fWCmxSZPqxs/V59rFteJZoI/AAAAAAAANOM/i3CbpXo4Vps32-RBONgHJ0Qd2v1z-9hQgCCo/s800/DSCF1175.JPG"
 	],
 
 	vida: [
