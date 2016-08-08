@@ -61,14 +61,14 @@ $(function() {
 
 
 $(document).ready(function() {
-    $("#load").animate({ "font-size": "6em"}) .animate({ "font-size": "4em"}, 3000);
+    $("#load").animate({ "font-size": "6em"}) .animate({ "font-size": "4em"}, 1000);
     });
 
 
 $(document).scroll(function() {
     var scrollTop = $(window).scrollTop();
     if (scrollTop > 900) {
-        $('.down').animate({ "font-size": "6em"}).animate({ "font-size": "4em"}, 3000);
+        $('.down').animate({ "font-size": "6em"}).animate({ "font-size": "4em"}, 1000);
         $(this).off('scroll');
     }
 });

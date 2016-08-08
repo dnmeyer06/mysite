@@ -22,11 +22,11 @@ body {
     #landing button:hover {
       cursor: pointer; }
     #landing button .fa {
+      font-size: 15em;
       position: absolute;
       z-index: 2000;
       right: 20px;
       bottom: 20px;
-      font-size: 15em;
       color: #e4e4e4; }
       #landing button .fa:hover {
         color: #b7b7b7; }
@@ -125,11 +125,11 @@ body {
     .slideShow button:hover {
       cursor: pointer; }
     .slideShow button i {
+      font-size: 15em;
       position: fixed;
       z-index: 1000;
       right: 20px;
       bottom: 20px;
-      font-size: 15em;
       color: #333; }
       .slideShow button i:hover {
         color: #b7b7b7; }
@@ -178,9 +178,8 @@ body {
   .slideShow .grid .grid-box {
     width: 50%; } }
 @media (max-width: 680px) {
-  #landing button i {
-    width: 100px;
-    height: 100px; }
+  #landing button .fa {
+    font-size: 7em; }
   #landing .landCont {
     padding: 30% 0 0 0; }
     #landing .landCont h1 {
@@ -202,6 +201,8 @@ body {
   .gallery .grid .grid-box {
     width: 100%; }
 
+  .slideShow button i {
+    font-size: 7em; }
   .slideShow .grid .grid-box {
     width: 100%; } }
 
