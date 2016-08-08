@@ -297,6 +297,13 @@ header {
   #contact .portrait {
     width: 100%; } }
 @media (max-width: 850px) and (min-width: 680px) {
+  .landing .landing-content {
+    margin-top: -350px; }
+    .landing .landing-content h1 {
+      font-size: 50px; }
+    .landing .landing-content h2 {
+      font-size: 25px; }
+
   .box-caption {
     font-size: 40px; }
 
