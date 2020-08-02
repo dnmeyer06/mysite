@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
   /*font-family: "Roboto", sans-serif;*/
-  margin: 0 90px 0 90px;
 }
 
 header {
@@ -16,10 +16,17 @@ header > a {
   flex-basis: 150px;
 }
 
+#my-work,
+#photography,
+header {
+  max-width: 1300px;
+  margin: auto;
+}
+
 .work {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 50px auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr;
   height: 800px;
 }
 
@@ -29,20 +36,37 @@ header > a {
   background-position: center;
 }
 
-.work > div:first-of-type {
-  background-image: url("https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+.work > div[class*="logo"] {
+  background-size: contain;
 }
 
-.work > div:nth-of-type(2) {
-  background-image: url("https://images.unsplash.com/photo-1470341223622-1019832be824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2288&q=80");
+.pp-logo {
+  background-image: url("../images/pp/pp-logo.png");
 }
 
-.work > div:nth-of-type(3) {
-  background-image: url("https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2094&q=80s");
+.mm-logo {
+  background-image: url("../images/massmutual/mm-logo.png");
 }
 
-.work > div:nth-of-type(4) {
-  background-image: url("https://images.unsplash.com/photo-1534161308652-fdfcf10f62c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2174&q=80");
+.epfr-logo {
+  background-image: url("../images/epfr/epfr-logo.jpg");
+  margin: 10px;
+}
+
+.epfr-1 {
+  background-image: url("../images/epfr/epfr-1.jpg");
+}
+
+.mm-1 {
+  background-image: url("../images/massmutual/mm-1.png");
+}
+
+.mm-2 {
+  background-image: url("../images/massmutual/mm-2.png");
+}
+
+.mm-3 {
+  background-image: url("../images/massmutual/mm-3.png");
 }
 
 .work > .header {
@@ -52,14 +76,14 @@ header > a {
   align-self: center;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .work {
-    grid-template-columns: 100%;
-    grid-template-rows: 50px 200px 200px 200px 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto auto auto auto;
+    height: 150vh;
   }
 
   .work > .header {
-    margin: 0;
-    align-self: center;
+    grid-column: 1 / 2;
   }
 }
