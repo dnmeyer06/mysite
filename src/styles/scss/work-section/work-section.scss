@@ -1,0 +1,63 @@
+@mixin fullWidth() {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-self: center;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px auto;
+  gap: 10px;
+  > div.content-block {
+    display: block;
+    .text-content {
+      margin: 0 10px;
+      h3 {
+        text-align: center;
+      }
+      p {
+        line-height: 1.5;
+      }
+    }
+    > img,
+    iframe {
+      height: auto;
+      width: 100%;
+    }
+    > iframe {
+      height: 280px;
+    }
+  }
+  > .tools-used {
+    text-align: center;
+    > img {
+      height: 50px;
+      margin: 0 10px 0 10px;
+    }
+  }
+  > a[class*="logo"] {
+    @include fullWidth();
+    background-size: 500px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  > .tools-used {
+    @include fullWidth();
+  }
+  .pp-logo {
+    background-image: url("../../images/pp/pp-logo.png");
+  }
+  .mm-logo {
+    background-image: url("../../images/massmutual/mm-logo.png");
+    background-color: #02306b;
+  }
+  .epfr-logo {
+    background-image: url("../../images/epfr/epfr-logo.jpg");
+  }
+}
+
+hr {
+  margin: 65px 0;
+}

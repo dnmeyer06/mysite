@@ -1,0 +1,24 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "My portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss": "node-sass --watch ./src/styles/scss/ -o ./src/styles/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnmeyer06/mysite.git"
+  },
+  "author": "Daniel Meyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnmeyer06/mysite/issues"
+  },
+  "homepage": "https://github.com/dnmeyer06/mysite#readme",
+  "dependencies": {
+    "mustache": "^4.0.1",
+    "node-sass": "^4.14.1"
+  }
+}

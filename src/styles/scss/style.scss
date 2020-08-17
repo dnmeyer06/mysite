@@ -1,0 +1,16 @@
+@import "./header.scss";
+@import "./work-section/work-section.scss";
+@import "./work-section/work-section-mobile.scss";
+@import "./landing.scss";
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 5px 20px;
+}
+
+#photography,
+#my-work,
+#landing {
+  max-width: 1300px;
+  margin: auto;
+}
