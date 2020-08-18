@@ -1,26 +1,39 @@
 @media only screen and (max-width: 768px) {
-  .work {
+  @mixin fullWidth() {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+  }
+
+  .work,
+  .epfr-work {
     grid-template-rows: auto;
     grid-template-columns: 100%;
-    row-gap: 10px;
+
     > a[class*="logo"] {
-      grid-column: 1 / 2;
+      @include fullWidth();
       background-size: 70%;
-      grid-column-start: 1;
-      grid-column-end: 2;
       height: 150px;
     }
+
     > div.content-block {
       grid-column-start: 1;
       grid-column-end: 2;
+
       .text-content {
         margin: 0;
       }
     }
+
+    > .tools-used {
+      @include fullWidth();
+    }
+
     .content-block + .content-block {
       margin: 0;
     }
   }
+
   hr {
     margin: 50px 0;
   }

@@ -9,13 +9,16 @@ header {
     font-size: 30px;
     float: left;
     width: 35%;
+
     > .first-name {
       padding-left: 30px;
     }
+
     > .last-name {
       padding-left: 85px;
     }
   }
+
   > nav {
     display: flex;
     align-items: stretch;
@@ -23,6 +26,7 @@ header {
     width: 65%;
     float: right;
     font-weight: 600;
+
     > a {
       text-decoration: none;
       color: black;

@@ -4,38 +4,23 @@
   align-self: center;
 }
 
+.work.epfr-work {
+  grid-template-columns: 1fr 1fr;
+
+  > a[class*="logo"],
+  .position,
+  .tools-used {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
 .work {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px auto;
-  gap: 10px;
-  > div.content-block {
-    display: block;
-    .text-content {
-      margin: 0 10px;
-      h3 {
-        text-align: center;
-      }
-      p {
-        line-height: 1.5;
-      }
-    }
-    > img,
-    iframe {
-      height: auto;
-      width: 100%;
-    }
-    > iframe {
-      height: 280px;
-    }
-  }
-  > .tools-used {
-    text-align: center;
-    > img {
-      height: 50px;
-      margin: 0 10px 0 10px;
-    }
-  }
+  gap: 15px;
+
   > a[class*="logo"] {
     @include fullWidth();
     background-size: 500px;
@@ -43,16 +28,61 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  > .position {
+    @include fullWidth();
+    text-align: center;
+  }
+
+  > div.content-block {
+    display: block;
+
+    .text-content {
+      margin: 0 10px;
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    > img,
+    iframe {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    > iframe {
+      height: 280px;
+    }
+  }
+
+  > .tools-used {
+    text-align: center;
+
+    > img {
+      height: 50px;
+      margin: 0 10px 0 10px;
+    }
+  }
+
   > .tools-used {
     @include fullWidth();
   }
+
   .pp-logo {
     background-image: url("../../images/pp/pp-logo.png");
   }
+
   .mm-logo {
     background-image: url("../../images/massmutual/mm-logo.png");
     background-color: #02306b;
   }
+
   .epfr-logo {
     background-image: url("../../images/epfr/epfr-logo.jpg");
   }
