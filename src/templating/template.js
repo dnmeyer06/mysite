@@ -5,9 +5,8 @@ const workTemplate =
   '<h2 class="position">{{position}}</h2>' +
   "{{ #contentBlocks }}" +
   '<div class="content-block">' +
-  '<img src="{{imgSrc}}" alt="" />' +
+  '<img src="{{imgSrc}}" />' +
   '<div class="text-content">' +
-  "<h3>{{ headerPoint }}</h3>" +
   "<p>{{ bodyPoint }}</p>" +
   "</div>" +
   "</div >" +
@@ -15,7 +14,7 @@ const workTemplate =
   '<div class="tools-used">' +
   "<h2>Tools Used:</h2 >" +
   "{{ #tools }}" +
-  '<img src="/src/images/tool-logos/{{tool}}.png" alt="{{tool}}">' +
+  '<img src="./images/{{tool}}.png" alt="{{tool}}">' +
   "{{/ tools}}" +
   "</div >" +
   "</div >" +
@@ -30,34 +29,34 @@ const workData = {
       prefix: "pp",
       contentBlocks: [
         {
-          imgSrc: "./images/pp/pp-1.png",
+          imgSrc: "./images/pp-1.png",
           headerPoint: "Built tools that benefited customer experience",
           bodyPoint:
             "Contributed to architecting and developing, from the ground up, a web app that gave customers insight into how our service was benefiting their development efforts.",
         },
         {
-          imgSrc: "./images/pp/pp-2.png",
-          headerPoint: "PP Point 2",
+          imgSrc: "./images/pp-2.png",
+          headerPoint: "Created systems to increase internal efficiency",
           bodyPoint:
             "Built internal CI system to serve as an operations hub to reduce overhead costs of external services and increase the efficiency of customer support teams.",
         },
         {
-          imgSrc: "./images/pp/pp-3.png",
+          imgSrc: "./images/pp-3.png",
           headerPoint: "PP Point 3",
           bodyPoint:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedvehicula lacinia placerat. Aliquam dapibus consectetur nibh quis lacinia. Integer eleifend nec risus at dignissim. Mauris a posuere erat, nec luctus tellus. Donec quis tincidunt mi, eget lobortis odio. Donec at feugiat mauris. Vestibulum mollis, enim id lobortis malesuada, dui dolor.",
+            "Conducted user interviews and synthesized findings into action items for the development team.",
         },
       ],
       tools: [
         { tool: "react" },
-        { tool: "AWS" },
-        { tool: "Serverless" },
-        { tool: "TestCafe" },
-        { tool: "Terraform" },
-        { tool: "Node.js" },
-        { tool: "Auth0" },
-        { tool: "Jest" },
-        { tool: "Ant-Design-React-UI" },
+        { tool: "aws" },
+        { tool: "serverless" },
+        { tool: "testcafe" },
+        { tool: "terraform" },
+        { tool: "nodejs" },
+        { tool: "auth0" },
+        { tool: "jest" },
+        { tool: "ant-design-react-ui" },
       ],
     },
     {
@@ -66,25 +65,25 @@ const workData = {
       prefix: "mm",
       contentBlocks: [
         {
-          imgSrc: "./images/massmutual/mm-1.png",
+          imgSrc: "./images/mm-1.png",
           headerPoint: "MM Point 1",
           bodyPoint:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedvehicula lacinia placerat. Aliquam dapibus consectetur nibh quis lacinia. Integer eleifend nec risus at dignissim. Mauris a posuere erat, nec luctus tellus. Donec quis tincidunt mi, eget lobortis odio. Donec at feugiat mauris. Vestibulum mollis, enim id lobortis malesuada, dui dolor.",
+            "Designed and built front-end components focusing on stability and versatility used across MassMutual branded sites.",
         },
         {
-          imgSrc: "./images/massmutual/mm-2.png",
+          imgSrc: "./images/mm-2.png",
           headerPoint: "MM Point 2",
           bodyPoint:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedvehicula lacinia placerat. Aliquam dapibus consectetur nibh quis lacinia. Integer eleifend nec risus at dignissim. Mauris a posuere erat, nec luctus tellus. Donec quis tincidunt mi, eget lobortis odio. Donec at feugiat mauris. Vestibulum mollis, enim id lobortis malesuada, dui dolor.",
+            "Integrated front end HTML and SCSS components with Cloud CMS content management system templates, enabling content creators to spin up new sites with minimum engineering involvement and increase speed of content ideation.",
         },
         {
-          imgSrc: "./images/massmutual/mm-3.png",
+          imgSrc: "./images/mm-3.png",
           headerPoint: "MM Point 3",
           bodyPoint:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedvehicula lacinia placerat. Aliquam dapibus consectetur nibh quis lacinia. Integer eleifend nec risus at dignissim. Mauris a posuere erat, nec luctus tellus. Donec quis tincidunt mi, eget lobortis odio. Donec at feugiat mauris. Vestibulum mollis, enim id lobortis malesuada, dui dolor.",
+            "Contributed to boilerplate content catalogue adhering to styling and coding standards.",
         },
       ],
-      tools: [{ tool: "React" }, { tool: "SASS" }, { tool: "Cloud-CMS" }],
+      tools: [{ tool: "react" }, { tool: "sass" }, { tool: "cloud-cms" }],
     },
     {
       url:
@@ -93,29 +92,29 @@ const workData = {
       prefix: "epfr",
       contentBlocks: [
         {
-          imgSrc: "./images/epfr/epfr-1.png",
+          imgSrc: "./images/epfr-1.png",
           headerPoint: "EPFR Point 1",
           bodyPoint:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedvehicula lacinia placerat. Aliquam dapibus consectetur nibh quis lacinia. Integer eleifend nec risus at dignissim. Mauris a posuere erat, nec luctus tellus. Donec quis tincidunt mi, eget lobortis odio. Donec at feugiat mauris. Vestibulum mollis, enim id lobortis malesuada, dui dolor.",
+            "Executed and contributed to full-stack web development projects, with an emphasis on front end features.",
         },
         {
-          imgSrc: "./images/epfr/epfr-2.png",
+          imgSrc: "./images/epfr-2.png",
           headerPoint: "EPFR Point 2",
           bodyPoint:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sedvehicula lacinia placerat. Aliquam dapibus consectetur nibh quis lacinia. Integer eleifend nec risus at dignissim. Mauris a posuere erat, nec luctus tellus. Donec quis tincidunt mi, eget lobortis odio. Donec at feugiat mauris. Vestibulum mollis, enim id lobortis malesuada, dui dolor.",
+            "Designed and built new customer facing portal hosting multiple products from initial wireframe through release.",
         },
       ],
       tools: [
-        { tool: "Vue.js" },
-        { tool: "SASS" },
-        { tool: "Jquery" },
-        { tool: "Adobe-Illustrator" },
+        { tool: "vuejs" },
+        { tool: "sass" },
+        { tool: "jquery" },
+        { tool: "adobe-illustrator" },
       ],
     },
   ],
 };
 
-const loadTemplate = () => {
+export const loadTemplate = () => {
   const output = Mustache.render(workTemplate, workData);
   document.getElementById("my-work").innerHTML = output;
 };

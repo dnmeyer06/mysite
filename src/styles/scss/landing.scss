@@ -4,6 +4,34 @@
   grid-template-rows: 300px 300px;
   width: 100%;
 
+  .social-links {
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: end;
+
+    > hr {
+      width: 75%;
+    }
+
+    > a {
+      text-decoration: none;
+      color: black;
+      font-size: 24px;
+      width: 100%;
+
+      &:hover {
+        color: gray;
+      }
+
+      .fab,
+      .fas {
+        width: 1.28571429em;
+        text-align: center;
+      }
+    }
+  }
+
   > .galaxy {
     background-image: url("../../images/landing/landing-bg.jpg");
     background-size: cover;

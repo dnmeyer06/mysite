@@ -4,47 +4,39 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     />
-    <link rel="stylesheet" href="styles/css/style.css"/>
     <title>Daniel Meyer's Website</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
     <script src="https://unpkg.com/mustache@latest"></script>
-    <script src="/src/templating/template.js"></script>
+    <script src="/dist/index.js"></script>
+    <script src="https://kit.fontawesome.com/6932171c9c.js" crossorigin="anonymous"></script>
   </head>
-  <body onload="loadTemplate()">
+  <body>
     <section id="landing">
       <header>
         <div class="autograph">
-          <div class="first-name">Daniel</div>
-          <div class="last-name">Meyer</div>
+          <div>Daniel Meyer</div>
         </div>
         <nav>
           <a href="#my-work">My Work</a>
-          <a href="#photography">Photography</a>
           <a href="#contact">Contact Me</a>
         </nav>
       </header>
       <div class="landing-body">
+        <div class="social-links">
+          <h3>Contact Me</h3>
+          <hr>
+          <a href="https://github.com/dnmeyer06" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/daniel-meyer-81a03516/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:dnmeyer06@gmail.com" target="_blank" title="E-mail"><i class="fas fa-inbox"></i></a>
+        </div>
         <div class="galaxy"></div>
       </div>
     </section>
     <div id="my-work">
     </div>
-    </section>
-    <section id="photography">
-      <h1>Photography</h1>
-      <!-- SnapWidget -->
-      <script src="https://snapwidget.com/js/snapwidget.js"></script>
-      <iframe
-        src="https://snapwidget.com/embed/857724"
-        class="snapwidget-widget"
-        allowtransparency="true"
-        frameborder="0"
-        scrolling="no"
-        style="border: none; overflow: hidden; width: 100%;"
-      ></iframe>
     </section>
     <section id="contact">
       <h1>Contact</h1>
@@ -72,3 +64,18 @@
             malesuada, dui dolor.
           </p>
         </div> -->
+
+
+<!-- 
+    <section id="photography">
+      <h1>Photography</h1>
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <iframe
+        src="https://snapwidget.com/embed/857724"
+        class="snapwidget-widget"
+        allowtransparency="true"
+        frameborder="0"
+        scrolling="no"
+        style="border: none; overflow: hidden; width: 100%;"
+      ></iframe>
+    </section> -->

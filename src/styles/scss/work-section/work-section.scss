@@ -15,6 +15,14 @@
   }
 }
 
+#my-work {
+  hr {
+    margin: 65px auto;
+    width: 20%;
+    border: 1px solid black;
+  }
+}
+
 .work {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -46,6 +54,7 @@
 
       p {
         line-height: 1.5;
+        font-weight: 500;
       }
     }
 
@@ -75,19 +84,15 @@
   }
 
   .pp-logo {
-    background-image: url("../../images/pp/pp-logo.png");
+    background-image: url("../../images/logos/pp-logo.png");
   }
 
   .mm-logo {
-    background-image: url("../../images/massmutual/mm-logo.png");
+    background-image: url("../../images/logos/mm-logo.png");
     background-color: #02306b;
   }
 
   .epfr-logo {
-    background-image: url("../../images/epfr/epfr-logo.jpg");
+    background-image: url("../../images/logos/epfr-logo.jpg");
   }
-}
-
-hr {
-  margin: 65px 0;
 }
