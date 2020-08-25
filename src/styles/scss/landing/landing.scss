@@ -1,7 +1,7 @@
 .landing-body {
   display: grid;
   grid-template-columns: 20% 1fr 1fr;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 1fr 1fr;
   width: 100%;
 
   > .description-section {

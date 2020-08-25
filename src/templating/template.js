@@ -14,11 +14,11 @@ const workTemplate =
   '<div class="tools-used">' +
   "<h2>Tools Used:</h2 >" +
   "{{ #tools }}" +
-  '<img src="./images/{{tool}}.png" alt="{{tool}}">' +
+  '<img src="./images/{{tool}}.png" alt="{{tool}}" title="{{tool}}">' +
   "{{/ tools}}" +
   "</div >" +
-  "</div >" +
   "<hr>" +
+  "</div >" +
   "{{/ workExperience}}";
 
 const workData = {
