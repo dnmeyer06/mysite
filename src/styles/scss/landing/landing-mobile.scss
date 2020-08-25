@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px) {
+  #landing {
+    .landing-body {
+      grid-template-rows: auto;
+      grid-template-columns: 100%;
+
+      .social-links {
+        margin: 10px 0;
+
+        a {
+          font-size: 85px;
+        }
+
+        hr {
+          margin: 20px auto;
+        }
+      }
+
+      > .galaxy {
+        display: none;
+      }
+    }
+  }
+}

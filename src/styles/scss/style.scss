@@ -1,11 +1,13 @@
-@import "./header.scss";
 @import "./work-section/work-section.scss";
 @import "./work-section/work-section-mobile.scss";
-@import "./landing.scss";
+@import "./landing/landing.scss";
+@import "./landing/landing-mobile.scss";
+@import "./section-header/section-header.scss";
+@import "./section-header/section-header-mobile.scss";
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 5px 20px;
+  margin: 0;
 }
 
 #photography,

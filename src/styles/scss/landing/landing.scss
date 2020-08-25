@@ -4,11 +4,34 @@
   grid-template-rows: 300px 300px;
   width: 100%;
 
+  > .description-section {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    float: left;
+    text-transform: uppercase;
+
+    > div {
+      padding: 20px 10px;
+    }
+
+    > .autograph {
+      letter-spacing: 3.2px;
+    }
+
+    > .description-item {
+      font-size: 16px;
+      text-align: right;
+      letter-spacing: 2.4px;
+    }
+  }
+
   .social-links {
     text-align: center;
     grid-row: 2/3;
     grid-column: 1/2;
     align-self: end;
+    padding: 20px 0;
 
     > hr {
       width: 75%;
@@ -17,11 +40,11 @@
     > a {
       text-decoration: none;
       color: black;
-      font-size: 24px;
+      font-size: 30px;
       width: 100%;
 
       &:hover {
-        color: gray;
+        color: lightgray;
       }
 
       .fab,

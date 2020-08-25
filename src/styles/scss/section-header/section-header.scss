@@ -1,0 +1,34 @@
+.section-header {
+  background-color: #39373a;
+  padding: 70px;
+  color: #fff;
+
+  h2 {
+    position: relative;
+    text-align: center;
+
+    &:after,
+    &:before {
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 30%;
+      border-bottom: 4px solid #fff;
+      content: "";
+    }
+
+    &:after {
+      right: 0;
+    }
+
+    &:before {
+      left: 0;
+    }
+  }
+  .about-me-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    > div {
+    }
+  }
+}
