@@ -1,0 +1,131 @@
+@mixin fullWidth() {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-self: center;
+}
+
+#my-work {
+  .pp-work,
+  .mm-work,
+  .epfr-work {
+    > a[class*="logo"] {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    hr {
+      margin: 65px auto;
+      width: 90%;
+    }
+  }
+
+  .pp-work,
+  .epfr-work {
+    hr {
+      border: 2px solid black;
+    }
+  }
+
+  .mm-work hr {
+    border: 2px solid #fff;
+  }
+
+  .mm-work,
+  .pp-work {
+    hr {
+      @include fullWidth();
+    }
+  }
+
+  .work.epfr-work {
+    grid-template-columns: 1fr 1fr;
+    background-color: #e39f1c;
+    color: #fff;
+
+    > a[class*="logo"],
+    hr,
+    .position,
+    .tools-used {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  .work.mm-work,
+  .mm-work + hr {
+    background-color: #02306a;
+    color: #fff;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px auto;
+    gap: 15px;
+
+    > a[class*="logo"] {
+      @include fullWidth();
+      background-size: 500px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    > .position {
+      @include fullWidth();
+      text-align: center;
+    }
+
+    > div.content-block {
+      display: block;
+
+      .text-content {
+        margin: 0 10px;
+
+        h3 {
+          text-align: center;
+        }
+
+        p {
+          line-height: 1.5;
+          font-weight: 500;
+        }
+      }
+
+      > img,
+      iframe {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      > iframe {
+        height: 280px;
+      }
+    }
+
+    > .tools-used {
+      text-align: center;
+      @include fullWidth();
+
+      > img {
+        height: 50px;
+        margin: 0 10px 0 10px;
+      }
+    }
+
+    .pp-logo {
+      background-image: url("../../images/logos/pp-logo.png");
+    }
+
+    .mm-logo {
+      background-image: url("../../images/logos/mm-logo.png");
+      background-color: #02306b;
+    }
+
+    .epfr-logo {
+      background-image: url("../../images/logos/epfr-logo.png");
+    }
+  }
+}

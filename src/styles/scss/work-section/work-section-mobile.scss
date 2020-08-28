@@ -1,0 +1,36 @@
+@media only screen and (max-width: 768px) {
+  #my-work {
+    @mixin fullWidth() {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      align-self: center;
+    }
+
+    .work,
+    .work.epfr-work {
+      grid-template-rows: auto;
+      grid-template-columns: 100%;
+
+      > a[class*="logo"] {
+        background-size: 70%;
+        height: 150px;
+      }
+
+      > div.content-block {
+        margin: 10px;
+      }
+
+      > .tools-used,
+      a[class*="logo"],
+      .position,
+      div.content-block,
+      hr {
+        @include fullWidth();
+      }
+    }
+
+    hr {
+      margin: 50px auto;
+    }
+  }
+}

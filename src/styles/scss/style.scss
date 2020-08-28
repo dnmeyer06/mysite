@@ -1,0 +1,21 @@
+@import "./work-section/work-section.scss";
+@import "./work-section/work-section-mobile.scss";
+@import "./landing/landing.scss";
+@import "./landing/landing-mobile.scss";
+@import "./section-header/section-header.scss";
+@import "./section-header/section-header-mobile.scss";
+@import "./about-me/about-me.scss";
+@import "./about-me/about-me-mobile.scss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+#photography,
+#my-work,
+#landing,
+#about-me {
+  max-width: 1300px;
+  margin: auto;
+}
