@@ -26,6 +26,7 @@ import serverless from "./images/serverless.png";
 import terraform from "./images/terraform.png";
 import testcafe from "./images/testcafe.png";
 import vuejs from "./images/vuejs.png";
+import resume from "./Meyer, Daniel - Resume.pdf";
 
 window.onload = (event) => {
   loadTemplate();

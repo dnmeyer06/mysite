@@ -27,30 +27,51 @@
   }
 
   .social-links {
+    position: relative;
     text-align: center;
     grid-row: 2/3;
     grid-column: 1/2;
     align-self: end;
-    padding: 20px 0;
+    padding: 20px 0 50px 0;
 
     > hr {
       width: 75%;
     }
 
-    > a {
-      text-decoration: none;
-      color: black;
-      font-size: 30px;
-      width: 100%;
+    .social-link {
+      display: inline-block;
 
-      &:hover {
-        color: lightgray;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        width: 100%;
+
+        &:hover {
+          color: #8e8d8d;
+        }
+
+        .fab,
+        .fas {
+          width: 1.28571429em;
+          text-align: center;
+        }
       }
 
-      .fab,
-      .fas {
-        width: 1.28571429em;
+      h4 {
+        display: none;
+        position: absolute;
         text-align: center;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 15px 0;
+      }
+
+      &:hover {
+        h4 {
+          display: inline;
+        }
       }
     }
   }

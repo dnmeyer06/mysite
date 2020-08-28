@@ -8,6 +8,12 @@
   .pp-work,
   .mm-work,
   .epfr-work {
+    > a[class*="logo"] {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
     hr {
       margin: 65px auto;
       width: 90%;
