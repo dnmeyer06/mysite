@@ -17,12 +17,6 @@
   .pp-work,
   .mm-work,
   .epfr-work {
-    > a[class*="logo"] {
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-    }
-
     hr {
       margin: 65px auto;
       width: 90%;
@@ -47,48 +41,36 @@
     }
   }
 
-  .work.epfr-work {
-    background-color: #e39f1c;
-    color: #fff;
-    grid-template-columns: 1fr 1fr;
-
-    > a[class*="logo"],
-    hr,
-    .position,
-    .tools-used {
-      grid-column-end: 3;
-      grid-column-start: 1;
-    }
-  }
-
-  .work.mm-work,
-  .mm-work + hr {
-    background-color: #02306a;
-    color: #fff;
-  }
-
   .work {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 175px auto;
-    padding: 0 15px;
+    > div {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 175px auto;
+      padding: 0 15px;
+    }
 
-    > a[class*="logo"] {
+    > * {
+      margin: auto;
+      max-width: 1300px;
+    }
+
+    a[class*="logo"] {
       @include fullWidth();
       background-position: center;
       background-repeat: no-repeat;
       background-size: 500px;
       height: 100%;
+      width: 100%;
     }
 
-    > .position {
+    .position {
       @include fullWidth();
       font-weight: 400;
       text-align: center;
     }
 
-    > div.content-block {
+    div.content-block {
       display: block;
 
       .text-content {
@@ -116,7 +98,7 @@
       }
     }
 
-    > .tools-used {
+    .tools-used {
       @include fullWidth();
       text-align: center;
 
@@ -140,6 +122,29 @@
 
     .epfr-logo {
       background-image: url("../../images/logos/epfr-logo.png");
+    }
+  }
+
+  .work.mm-work,
+  .mm-work + hr {
+    background-color: #02306a;
+    color: #fff;
+  }
+
+  .work.epfr-work {
+    background-color: #7eb0a6;
+    color: black;
+
+    > div {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    a[class*="logo"],
+    hr,
+    .position,
+    .tools-used {
+      grid-column-end: 3;
+      grid-column-start: 1;
     }
   }
 }

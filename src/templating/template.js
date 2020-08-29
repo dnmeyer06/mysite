@@ -4,6 +4,7 @@ const workTemplate =
   "</div>" +
   "{{#workExperience}}" +
   '<div class="work {{prefix}}-work">' +
+  "<div>" +
   '<a class="{{prefix}}-logo" href="{{url}}" target="_blank"> </a >' +
   '<h2 class="position">{{position}}</h2>' +
   "{{ #contentBlocks }}" +
@@ -12,16 +13,17 @@ const workTemplate =
   '<div class="text-content">' +
   "<p>{{ bodyPoint }}</p>" +
   "</div>" +
-  "</div >" +
+  "</div>" +
   "{{ / contentBlocks}}" +
   '<div class="tools-used">' +
   "<h2>Tools Used:</h2 >" +
   "{{ #tools }}" +
   '<img src="./images/{{tool}}.png" alt="{{tool}}" title="{{tool}}">' +
   "{{/ tools}}" +
-  "</div >" +
+  "</div>" +
   "<hr>" +
-  "</div >" +
+  "</div>" +
+  "</div>" +
   "{{/ workExperience}}";
 
 const workData = {

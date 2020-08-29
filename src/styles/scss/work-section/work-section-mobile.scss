@@ -17,20 +17,22 @@
 
     .work,
     .work.epfr-work {
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      padding: 0;
+      > div {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        padding: 0;
+      }
 
-      > a[class*="logo"] {
+      a[class*="logo"] {
         background-size: 70%;
         height: 150px;
       }
 
-      > div.content-block {
+      div.content-block {
         margin: 10px;
       }
 
-      > .tools-used,
+      .tools-used,
       a[class*="logo"],
       .position,
       div.content-block,
@@ -41,6 +43,19 @@
 
     hr {
       margin: 50px auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #my-work {
+    .pp-work,
+    .mm-work,
+    .epfr-work {
+      hr {
+        margin: 50px 0;
+        width: 100%;
+      }
     }
   }
 }
