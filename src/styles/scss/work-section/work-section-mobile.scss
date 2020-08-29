@@ -1,15 +1,25 @@
 @media only screen and (max-width: 768px) {
   #my-work {
     @mixin fullWidth() {
-      grid-column-start: 1;
-      grid-column-end: 2;
       align-self: center;
+      grid-column-end: 2;
+      grid-column-start: 1;
+    }
+
+    .section-header {
+      h2 {
+        &:after,
+        &:before {
+          border: none;
+        }
+      }
     }
 
     .work,
     .work.epfr-work {
-      grid-template-rows: auto;
       grid-template-columns: 100%;
+      grid-template-rows: auto;
+      padding: 0;
 
       > a[class*="logo"] {
         background-size: 70%;

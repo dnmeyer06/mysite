@@ -1,11 +1,11 @@
 @media only screen and (max-width: 768px) {
   .section-header {
-    padding: 30px 10px;
+    padding: 10px 10px;
 
     h2 {
       &:after,
       &:before {
-        width: 25%;
+        border: none;
       }
     }
   }
