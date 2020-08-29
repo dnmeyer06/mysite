@@ -1,4 +1,11 @@
-.about-me-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+#about-me {
+  background-color: #39373a;
+  color: #fff;
+
+  .about-me-items {
+    margin: auto;
+    max-width: 900px;
+    padding: 15px;
+    text-align: center;
+  }
 }

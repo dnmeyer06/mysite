@@ -1,4 +1,7 @@
 const workTemplate =
+  '<div class="section-header">' +
+  "<h2>Professional Experience</h2>" +
+  "</div>" +
   "{{#workExperience}}" +
   '<div class="work {{prefix}}-work">' +
   '<a class="{{prefix}}-logo" href="{{url}}" target="_blank"> </a >' +

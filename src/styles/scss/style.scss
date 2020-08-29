@@ -1,11 +1,11 @@
-@import "./work-section/work-section.scss";
-@import "./work-section/work-section-mobile.scss";
-@import "./landing/landing.scss";
-@import "./landing/landing-mobile.scss";
-@import "./section-header/section-header.scss";
-@import "./section-header/section-header-mobile.scss";
-@import "./about-me/about-me.scss";
-@import "./about-me/about-me-mobile.scss";
+@use "./work-section/work-section.scss";
+@use "./work-section/work-section-mobile.scss";
+@use "./landing/landing.scss";
+@use "./landing/landing-mobile.scss";
+@use "./section-header/section-header.scss";
+@use "./section-header/section-header-mobile.scss";
+@use "./about-me/about-me.scss";
+@use "./about-me/about-me-mobile.scss";
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -16,6 +16,6 @@ body {
 #my-work,
 #landing,
 #about-me {
-  max-width: 1300px;
   margin: auto;
+  max-width: 1300px;
 }
