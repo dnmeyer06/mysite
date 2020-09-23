@@ -15,4 +15,4 @@ deploy:
     branch: master
 install:
   - yarn
-fqdn: danmdesigns.com
+fqdn: "danmdesigns.com"
