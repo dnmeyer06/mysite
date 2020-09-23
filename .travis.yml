@@ -3,7 +3,7 @@ node_js:
   - "stable"
 cache:
   directories:
-  - node_modules
+    - node_modules
 script:
   - yarn prod
 deploy:
@@ -13,3 +13,5 @@ deploy:
   local_dir: build
   on:
     branch: master
+install:
+  - yarn
