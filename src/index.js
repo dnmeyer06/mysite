@@ -2,14 +2,14 @@ import { loadTemplate } from "./templating/template";
 import "./styles/scss/style.scss";
 
 //image imports
-import pp1 from "./images/pp-1.png";
-import pp2 from "./images/pp-2.png";
-import pp3 from "./images/pp-3.png";
-import mm1 from "./images/mm-1.png";
-import mm2 from "./images/mm-2.png";
-import mm3 from "./images/mm-3.png";
-import epfr1 from "./images/epfr-1.png";
-import epfr2 from "./images/epfr-2.png";
+import pp1 from "./images/pp-1.jpg";
+import pp2 from "./images/pp-2.jpg";
+import pp3 from "./images/pp-3.jpg";
+import mm1 from "./images/mm-1.jpg";
+import mm2 from "./images/mm-2.jpg";
+import mm3 from "./images/mm-3.jpg";
+import epfr1 from "./images/epfr-1.jpg";
+import epfr2 from "./images/epfr-2.jpg";
 
 //tool logo imports
 import adobe from "./images/adobe-illustrator.png";

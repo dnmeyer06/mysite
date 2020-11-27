@@ -34,19 +34,19 @@ const workData = {
       prefix: "pp",
       contentBlocks: [
         {
-          imgSrc: "./images/pp-1.png",
+          imgSrc: "./images/pp-1.jpg",
           headerPoint: "Built tools that benefited customer experience",
           bodyPoint:
             "Contributed to architecting and developing, from the ground up, a web app that gave customers insight into how our service was benefiting their development efforts.",
         },
         {
-          imgSrc: "./images/pp-2.png",
+          imgSrc: "./images/pp-2.jpg",
           headerPoint: "Created systems to increase internal efficiency",
           bodyPoint:
             "Built internal CI system to serve as an operations hub to reduce overhead costs of external services and increase the efficiency of customer support teams.",
         },
         {
-          imgSrc: "./images/pp-3.png",
+          imgSrc: "./images/pp-3.jpg",
           headerPoint: "PP Point 3",
           bodyPoint:
             "Conducted user interviews and synthesized findings into action items for the development team.",
@@ -70,19 +70,19 @@ const workData = {
       prefix: "mm",
       contentBlocks: [
         {
-          imgSrc: "./images/mm-1.png",
+          imgSrc: "./images/mm-1.jpg",
           headerPoint: "MM Point 1",
           bodyPoint:
             "Designed and built front-end components focusing on stability and versatility used across MassMutual branded sites.",
         },
         {
-          imgSrc: "./images/mm-2.png",
+          imgSrc: "./images/mm-2.jpg",
           headerPoint: "MM Point 2",
           bodyPoint:
             "Integrated front end HTML and SCSS components with Cloud CMS content management system templates, enabling content creators to spin up new sites with minimum engineering involvement and increase speed of content ideation.",
         },
         {
-          imgSrc: "./images/mm-3.png",
+          imgSrc: "./images/mm-3.jpg",
           headerPoint: "MM Point 3",
           bodyPoint:
             "Contributed to boilerplate content catalogue adhering to styling and coding standards.",
@@ -97,13 +97,13 @@ const workData = {
       prefix: "epfr",
       contentBlocks: [
         {
-          imgSrc: "./images/epfr-1.png",
+          imgSrc: "./images/epfr-1.jpg",
           headerPoint: "EPFR Point 1",
           bodyPoint:
             "Executed and contributed to full-stack web development projects, with an emphasis on front end features.",
         },
         {
-          imgSrc: "./images/epfr-2.png",
+          imgSrc: "./images/epfr-2.jpg",
           headerPoint: "EPFR Point 2",
           bodyPoint:
             "Designed and built new customer facing portal hosting multiple products from initial wireframe through release.",
