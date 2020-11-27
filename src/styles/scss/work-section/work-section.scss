@@ -55,7 +55,7 @@
       max-width: 1300px;
     }
 
-    a[class*="logo"] {
+    a[class*='logo'] {
       @include fullWidth();
       background-position: center;
       background-repeat: no-repeat;
@@ -113,15 +113,15 @@
     }
 
     .pp-logo {
-      background-image: url("../../images/logos/pp-logo.png");
+      background-image: url('../../images/logos/pp-logo.png');
     }
 
     .mm-logo {
-      background-image: url("../../images/logos/mm-logo.png");
+      background-image: url('../../images/logos/mm-logo.png');
     }
 
     .epfr-logo {
-      background-image: url("../../images/logos/epfr-logo.png");
+      background-image: url('../../images/logos/epfr-logo.png');
     }
   }
 
@@ -139,7 +139,7 @@
       grid-template-columns: 1fr 1fr;
     }
 
-    a[class*="logo"],
+    a[class*='logo'],
     hr,
     .position,
     .tools-used {
