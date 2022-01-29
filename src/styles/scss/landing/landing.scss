@@ -1,14 +1,19 @@
+@use '../variables';
+
 .landing-body {
   display: grid;
-  grid-template-columns: 20% 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 100%;
+  min-height: 90vh;
+  align-content: stretch;
+  grid-template-rows: auto 180px;
 
   > .description-section {
     float: left;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    max-width: 600px;
+    align-self: center;
+    place-self: center;
 
     > div {
       padding: 20px 10px;
@@ -16,6 +21,9 @@
 
     > .autograph {
       letter-spacing: 3.2px;
+      font-family: variables.$header-font;
+      font-weight: 700;
+      font-size: 2rem;
     }
 
     > .description-item {
@@ -29,9 +37,6 @@
     text-align: center;
     position: relative;
     padding: 20px 0 50px 0;
-    grid-row: 2/3;
-    grid-column: 1/2;
-    align-self: end;
 
     > hr {
       width: 75%;
@@ -44,8 +49,8 @@
 
       a {
         text-decoration: none;
-        color: black;
-        font-size: 30px;
+        color: variables.$text-color;
+        font-size: variables.$size-icon-font;
         width: 100%;
 
         &:hover {

@@ -9,7 +9,7 @@
     h2 {
       &:after,
       &:before {
-        border-bottom: 4px solid black;
+        border-bottom: 1px solid black;
       }
     }
   }
@@ -21,17 +21,6 @@
       margin: 65px auto;
       width: 90%;
     }
-  }
-
-  .pp-work,
-  .epfr-work {
-    hr {
-      border: 2px solid black;
-    }
-  }
-
-  .mm-work hr {
-    border: 2px solid #fff;
   }
 
   .mm-work,
@@ -132,9 +121,6 @@
   }
 
   .work.epfr-work {
-    background-color: #7eb0a6;
-    color: black;
-
     > div {
       grid-template-columns: 1fr 1fr;
     }

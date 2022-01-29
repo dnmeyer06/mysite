@@ -1,98 +1,90 @@
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    />
-    <title>Daniel Meyer's Website</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <script src="https://unpkg.com/mustache@latest"></script>
-    <script src="/dist/index.js"></script>
-    <script
-      src="https://kit.fontawesome.com/6932171c9c.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <section id="landing">
-      <div class="landing-body">
-        <div class="description-section">
-          <div class="autograph">My name is Daniel Meyer</div>
-          <div class="description-item">Front end developer</div>
-          <div class="description-item">Digital nomad</div>
-          <div class="description-item">Photographer</div>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100;400;500;600;800&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <title>Daniel Meyer's Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <script src="https://unpkg.com/mustache@latest"></script>
+  <script src="/dist/index.js"></script>
+  <script src="https://kit.fontawesome.com/6932171c9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="landing">
+    <div class="landing-body bg-black">
+      <div class="description-section">
+        <div class="autograph">My name Dan</div>
+        <div class="autograph">Welcome to my portfolio</div>
+        <div class="description-item">Front end developer</div>
+        <div class="description-item">Digital nomad</div>
+        <div class="description-item">Photographer</div>
+      </div>
+      <div class="social-links">
+        <h3>Contact Me</h3>
+        <hr />
+        <div class="social-link">
+          <a href="https://github.com/dnmeyer06" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <h4>Github</h4>
         </div>
-        <div class="social-links">
-          <h3>Contact Me</h3>
-          <hr />
-          <div class="social-link">
-            <a href="https://github.com/dnmeyer06" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <h4>Github</h4>
-          </div>
-          <div class="social-link">
-            <a href="https://www.instagram.com/danmdesigns/" target="_blank">
-              <i class="fab fa-instagram"> </i>
-            </a>
-            <h4>Instagram</h4>
-          </div>
-          <div class="social-link">
-            <a
-              href="https://www.linkedin.com/in/daniel-meyer-81a03516/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <h4>LinkedIn</h4>
-          </div>
-          <div class="social-link">
-            <a href="https://twitter.com/dnmeyer06" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <h4>Twitter</h4>
-          </div>
-          <div class="social-link">
-            <a href="mailto:dnmeyer06@gmail.com" target="_blank">
-              <i class="fas fa-inbox"></i>
-            </a>
-            <h4>E-mail</h4>
-          </div>
-          <div class="social-link">
-            <a
-              href="./Meyer, Daniel - Resume.pdf"
-              download="Meyer, Daniel - Resume.pdf"
-            >
-              <i class="fas fa-file-pdf"></i>
-            </a>
-            <h4>Download Resume</h4>
-          </div>
+        <div class="social-link">
+          <a href="https://www.instagram.com/danmdesigns/" target="_blank">
+            <i class="fab fa-instagram"> </i>
+          </a>
+          <h4>Instagram</h4>
         </div>
-        <div class="galaxy"></div>
+        <div class="social-link">
+          <a href="https://www.linkedin.com/in/daniel-meyer-81a03516/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <h4>LinkedIn</h4>
+        </div>
+        <div class="social-link">
+          <a href="https://twitter.com/dnmeyer06" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <h4>Twitter</h4>
+        </div>
+        <div class="social-link">
+          <a href="mailto:dnmeyer06@gmail.com" target="_blank">
+            <i class="fas fa-inbox"></i>
+          </a>
+          <h4>E-mail</h4>
+        </div>
+        <div class="social-link">
+          <a href="./Meyer, Daniel - Resume.pdf" download="Meyer, Daniel - Resume.pdf">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <h4>Download Resume</h4>
+        </div>
       </div>
-    </section>
-    <section id="about-me">
-      <div class="section-header">
-        <h2>About Me</h2>
-      </div>
-      <div class="about-me-items">
-        <p>
-          I started as a web developer in 2016, working for enterprise companies
-          in Boston.
-        </p>
-        <p>
-          In 2020, I relocated to Bali and worked remotely as a software
-          engineer.
-        </p>
-        <p>
-          I'm currently a digital nomad, travelling in Southeast Asia and open
-          for remote and freelance front-end web development work.
-        </p>
-      </div>
-    </section>
-    <section id="my-work"></section>
-  </body>
+    </div>
+  </section>
+  <section id="about-me">
+    <div class="section-header">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-me-items">
+      <p>
+        I started as a web developer in 2016, working for enterprise companies
+        in Boston.
+      </p>
+      <p>
+        In 2020, I relocated to Bali and worked remotely as a software
+        engineer.
+      </p>
+      <p>
+        I'm currently a digital nomad, travelling in Southeast Asia and open
+        for remote and freelance front-end web development work.
+      </p>
+    </div>
+  </section>
+  <section id="my-work"></section>
+</body>
+
 </html>

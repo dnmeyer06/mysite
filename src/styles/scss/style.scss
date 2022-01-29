@@ -1,15 +1,19 @@
-@use "./work-section/work-section.scss";
-@use "./work-section/work-section-mobile.scss";
-@use "./landing/landing.scss";
-@use "./landing/landing-mobile.scss";
-@use "./section-header/section-header.scss";
-@use "./section-header/section-header-mobile.scss";
-@use "./about-me/about-me.scss";
-@use "./about-me/about-me-mobile.scss";
+@use './variables';
+@use './work-section/work-section';
+@use './work-section/work-section-mobile.scss';
+@use './landing/landing';
+@use './landing/landing-mobile';
+@use './section-header/section-header.scss';
+@use './section-header/section-header-mobile.scss';
+@use './about-me/about-me.scss';
+@use './about-me/about-me-mobile.scss';
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   margin: 0;
+  background-color: variables.$main-background-color;
+  color: variables.$text-color;
 }
 
 #photography,
