@@ -10,8 +10,6 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
       - image: circleci/node:14.17.6
-    environment:
-      BUILD_DIR: dist
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
@@ -22,12 +20,16 @@ jobs:
       - run:
           name: Build Site
           command: yarn prod
+      - persist_to_workspace:
+          root: site
 
   deploy:
     docker:
       - image: circleci/node:14.17.6
     steps:
       - checkout
+      - attach_workspace:
+          at: site
       - run:
           name: Install and configure dependencies
           command: |
