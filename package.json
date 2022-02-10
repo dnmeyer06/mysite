@@ -22,7 +22,7 @@
   "homepage": "https://github.com/dnmeyer06/mysite#readme",
   "dependencies": {
     "mustache": "^4.0.1",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
