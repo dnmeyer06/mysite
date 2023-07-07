@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { FiMonitor, FiSun, FiMoon } from "react-icons/fi";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -14,10 +14,15 @@ const ThemeSwitcher = () => {
 
   return (
     <div className="group">
-      <button className="rounded-lg border-2 border-solid border-gray-300 p-2 capitalize">
-        {theme}
+      <button>
+        {resolvedTheme === "light" ? (
+          <FiSun className="inline" onClick={() => setTheme("dark")} />
+        ) : (
+          <FiMoon className="inline" onClick={() => setTheme("light")} />
+        )}
       </button>
-      <div className="p4 absolute hidden	rounded-lg border-2 border-solid border-gray-300 p-4 group-hover:block">
+      {/* Keeping this code to possibly implement system option */}
+      {/* <div className="p4 absolute hidden	rounded-lg border-2 border-solid border-gray-300 p-4 group-hover:block">
         <div>
           {resolvedTheme === "light" ? (
             <button className="py-2" onClick={() => setTheme("dark")}>
@@ -32,7 +37,7 @@ const ThemeSwitcher = () => {
         <button className="py-2" onClick={() => setTheme("system")}>
           <FiMonitor className="inline" /> System
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
