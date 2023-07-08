@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <div>
+      <div className="max-w-3xl">
         My name is Daniel Meyer, a full-stack software engineer with a passion
         for using technology to solve complex problems and create meaningful
         user experiences. With over seven years of experience, I specialize in

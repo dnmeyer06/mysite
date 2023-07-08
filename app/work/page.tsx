@@ -1,21 +1,52 @@
-import ExternalLink from "@/components/ExternalLink";
+//Image imports
+import innerworldLogo from "../../public/innerworldLogo.png";
+import tackingNetZeroUI from "../../public/trackingNetZero.png";
+import prodPerfectoLogo from "../../public/prodPerfectLogo.png";
+// import refoldLogo from "../../public/refold.png";
+// import massMutualLogo from "../../public/massMutual.png";
+
+// Component imports
+import WorkTile from "@/components/WorkTile";
 
 export default function Work() {
   return (
     <>
-      <p>Under construction. Something fancy coming soon.</p>
-      <br />
-      <p>
-        Until then, to see my employment history along with details of my work,
-        you can check out my{" "}
-        <ExternalLink href="https://www.linkedin.com/in/dnmeyer06/">
-          <strong className="underline">Linkedin Page</strong>
-        </ExternalLink>
-      </p>
-      {/* <div className="flex justify-between">
-        <HeaderText2 inline>Staff Positions</HeaderText2>
-        <HeaderText2 inline>Freelance Work</HeaderText2>
-      </div> */}
+      <div className="relative flex flex-wrap justify-center gap-6">
+        <WorkTile
+          link="work/tracking_net_zero"
+          alt="Tacking Net Zero UI"
+          src={tackingNetZeroUI}
+          title="Tracking Net Zero"
+        />
+
+        <WorkTile
+          link="work/innerworld"
+          alt="Innerworld Logo"
+          src={innerworldLogo}
+          title="Innerworld"
+        />
+
+        <WorkTile
+          link="work/prod_perfect"
+          alt="ProdPerfect Logo"
+          src={prodPerfectoLogo}
+          title="ProdPerfect"
+        />
+
+        {/* <WorkTile
+          link="work/refold"
+          alt="Refold Logo"
+          src={refoldLogo}
+          title="Refold Languages"
+        />
+
+        <WorkTile
+          link="work/mass_mutual"
+          alt="Mass Mutual Logo"
+          src={massMutualLogo}
+          title="MassMutual"
+        /> */}
+      </div>
     </>
   );
 }

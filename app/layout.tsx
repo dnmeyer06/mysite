@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Providers>
-          <div className="flex justify-center">
+          <div className="flex min-h-screen justify-center">
             <div className="w-11/12 lg:w-10/12">
               <NavBar />
               <div className="py-10">{children}</div>

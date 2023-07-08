@@ -11,7 +11,7 @@ const UnderlineHoverLink = ({
   children: ReactNode;
 }) => (
   <div className="group relative w-max py-4 ">
-    <Link href={link} className="z-10 flex align-middle">
+    <Link href={link} className="z-10 flex align-middle tracking-wide">
       {children}
     </Link>
     <div
