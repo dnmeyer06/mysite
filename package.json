@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next-tools/dynamic": "^0.0.11",
+    "@p5-wrapper/next": "^0.2.0",
+    "@p5-wrapper/react": "^4.2.0",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.39.0",
+    "@types/p5": "^1.6.2",
     "eslint-config-prettier": "8.8.0",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0"

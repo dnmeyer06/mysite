@@ -17,7 +17,11 @@ const HeaderText2 = ({
 }) => {
   return (
     <>
-      <h2 className={`${inline ? "inline" : ""} text-xl`}>{children}</h2>
+      <h2
+        className={`${inline ? "inline" : ""} text-xl font-normal leading-10`}
+      >
+        {children}
+      </h2>
     </>
   );
 };
