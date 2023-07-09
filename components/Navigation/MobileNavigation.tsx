@@ -16,17 +16,20 @@ const MobileNavigation = () => {
         onClick={() => setIsOpen((prevState) => !prevState)}
       />
       <div
-        className={`absolute right-0 top-0 z-10 flex  h-screen flex-col gap-3 border-l bg-slate-300 text-3xl transition-all duration-300 ease-out dark:bg-slate-950 ${
+        className={`fixed right-0 top-0 z-10 flex h-full flex-col gap-3 border-l bg-slate-300 text-3xl transition-all duration-300 ease-out dark:bg-slate-950 ${
           isOpen ? "w-8/12 border-solid border-l-stone-700 p-2" : "w-0 p-0"
         }`}
       >
         {isOpen && (
           <>
-            <AiOutlineClose
-              className="self-end"
-              onClick={() => setIsOpen(false)}
-              size="3rem"
-            />
+            <div className="flex justify-between">
+              <ThemeSwitcher />
+              <AiOutlineClose
+                className="self-end"
+                onClick={() => setIsOpen(false)}
+                size="3rem"
+              />
+            </div>
             <Link href="/" onClick={() => setIsOpen(false)}>
               Home
             </Link>
@@ -38,9 +41,6 @@ const MobileNavigation = () => {
             <Link href="/work" onClick={() => setIsOpen(false)}>
               Work
             </Link>
-            <div className="absolute bottom-5 right-5">
-              <ThemeSwitcher />
-            </div>
           </>
         )}
       </div>

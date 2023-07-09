@@ -16,9 +16,15 @@ const ThemeSwitcher = () => {
     <div className="group">
       <button>
         {resolvedTheme === "light" ? (
-          <FiSun className="inline" onClick={() => setTheme("dark")} />
+          <FiSun
+            className="inline sm:max-md:text-5xl"
+            onClick={() => setTheme("dark")}
+          />
         ) : (
-          <FiMoon className="inline" onClick={() => setTheme("light")} />
+          <FiMoon
+            className="inline sm:max-md:text-5xl"
+            onClick={() => setTheme("light")}
+          />
         )}
       </button>
       {/* Keeping this code to possibly implement system option */}
