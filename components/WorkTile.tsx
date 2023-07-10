@@ -26,7 +26,13 @@ const WorkTile = ({
             </p>
           </div>
         </div>
-        <Image alt={alt} src={src} className="-z-10 object-cover" fill={true} />
+        <Image
+          alt={alt}
+          src={src}
+          className="-z-10 object-cover"
+          fill={true}
+          placeholder="blur"
+        />
       </Link>
       {/* For mobile, show the title below the image */}
       <div className="flex justify-center text-center md:hidden">
