@@ -12,7 +12,7 @@ export default function Shhh() {
           </li>
           <br />
           <li>
-            - Designing users interfaces and UX interactions with Figma and
+            - Designing user interfaces and UX interactions with Figma and
             implementing them with Next.js and Firebase.
           </li>
           <br />

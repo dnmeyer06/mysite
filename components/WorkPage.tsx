@@ -27,7 +27,7 @@ const WorkPage = ({
     : "Current";
 
   return (
-    <>
+    <div className="max-w-3xl">
       {url ? (
         <a href={url} target="_blank" rel="noreferrer">
           <WorkHeader /> <AiOutlineLink className="inline" />
@@ -49,9 +49,8 @@ const WorkPage = ({
           </HeaderText2>
         </div>
       )}
-      <ul className="max-w-3xl">{jobAccomplishments}</ul>
-      <></>
-    </>
+      <ul>{jobAccomplishments}</ul>
+    </div>
   );
 };
 
