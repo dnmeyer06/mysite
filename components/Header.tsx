@@ -1,9 +1,17 @@
 import { ReactNode } from "react";
 
-const HeaderText = ({ children }: { children: ReactNode }) => {
+const HeaderText = ({
+  children,
+  inline,
+}: {
+  children: ReactNode;
+  inline?: boolean;
+}) => {
   return (
     <>
-      <h1 className="pb-6 pt-2 text-4xl">{children}</h1>
+      <h1 className={`${inline ? "inline" : ""} pb-6 pt-2 text-4xl`}>
+        {children}
+      </h1>
     </>
   );
 };

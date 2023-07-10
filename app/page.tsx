@@ -48,7 +48,7 @@ export default function Home() {
           <div className="py-4">
             <HeaderText2>This site</HeaderText2>
             <p className="tracking-wide">
-              This site is made with Typescript, Next.js and Tailwind
+              This site is made with Typescript, Next.js, Tailwind, and p5.js.
             </p>
           </div>
         </div>

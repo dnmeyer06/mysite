@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { HeaderText } from "./Header";
 
 const WorkTile = ({
   link,
@@ -17,7 +16,7 @@ const WorkTile = ({
     <>
       <Link
         href={link}
-        className="min group relative aspect-square w-10/12 cursor-pointer md:min-w-[300px] md:max-w-[30%]"
+        className="min group relative flex aspect-square w-10/12 cursor-pointer md:w-[calc(33%-.75rem)]"
       >
         {/* For desktop, show the title on hover */}
         <div className="relative hidden h-full w-full md:block">
@@ -30,8 +29,12 @@ const WorkTile = ({
         <Image alt={alt} src={src} className="-z-10 object-cover" fill={true} />
       </Link>
       {/* For mobile, show the title below the image */}
-      <div className="block pb-16 last:pb-0 md:hidden">
-        <p className="text-3xl tracking-widest">{title}</p>
+      <div className="flex justify-center text-center md:hidden">
+        <div className="w-10/12">
+          <Link href={link}>
+            <p className="text-3xl tracking-widest">{title}</p>
+          </Link>
+        </div>
       </div>
     </>
   );

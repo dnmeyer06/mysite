@@ -1,6 +1,3 @@
-import { HeaderText2 } from "@/components/Header";
-import { AiOutlineLink } from "react-icons/ai";
-import Work from "../page";
 import WorkPage from "@/components/WorkPage";
 
 export default function TrackingNetZero() {
@@ -33,6 +30,7 @@ export default function TrackingNetZero() {
           </li>
         </>
       }
+      startDate={new Date("October 2022")}
     />
   );
 }

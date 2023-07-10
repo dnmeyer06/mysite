@@ -1,4 +1,5 @@
 //Image imports
+import shhh from "../../public/shhhh.png";
 import innerworldLogo from "../../public/innerworldLogo.png";
 import tackingNetZeroUI from "../../public/trackingNetZero.png";
 import prodPerfectoLogo from "../../public/prodPerfectLogo.png";
@@ -12,6 +13,13 @@ export default function Work() {
   return (
     <>
       <div className="relative flex flex-wrap justify-center gap-6">
+        <WorkTile
+          link="work/shhh"
+          alt="Stealth mode AI project tile image"
+          src={shhh}
+          title="Stealth mode AI project"
+        />
+
         <WorkTile
           link="work/tracking_net_zero"
           alt="Tacking Net Zero UI"

@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import { P5CanvasInstance, ReactP5Wrapper, Sketch } from "@p5-wrapper/react";
+import debounce from "lodash.debounce";
 
 const getParentSize = (parentRef: React.RefObject<HTMLDivElement>) => {
   if (!parentRef.current) return { width: 0, height: 0 };
@@ -34,38 +35,16 @@ const MySketchComponent = () => {
     };
 
     p5.draw = () => {
-      p5.fill(generateColor());
-      p5.rect(p5.width / 2, p5.height / 2, p5.width, p5.height);
-
-      // Draw center circle and large, primary direction inner and outer circles
-      drawPattern(p5, p5.width / 2, p5.height / 2, p5.width);
-
-      let mySize = 200;
-
-      // Create smaller circles in a grid
-      for (let x = 0; x <= p5.width; x += mySize) {
-        for (let y = 0; y <= p5.height; y += mySize) {
-          drawPattern(p5, x, y, mySize);
-        }
-      }
-
-      for (let iter = 0; iter < 2; iter++) {
-        mySize /= 2;
-
-        for (let x = 0; x <= p5.width; x += mySize) {
-          for (let y = 0; y <= p5.height; y += mySize) {
-            if (p5.random(0, 1) > 0.5) {
-              drawPattern(p5, x, y, mySize);
-            }
-          }
-        }
-      }
+      drawCanvas();
     };
 
-    p5.windowResized = () => {
+    const debouncedResize = debounce(() => {
       const { width, height } = getParentSize(parentRef);
-
       p5.resizeCanvas(width, height);
+    }, 500);
+
+    p5.windowResized = () => {
+      debouncedResize();
     };
 
     const drawPattern = (
@@ -149,9 +128,39 @@ const MySketchComponent = () => {
     const generateColor = () => {
       return colors[Math.floor(Math.random() * colors.length)];
     };
+
+    const drawCanvas = () => {
+      p5.fill(generateColor());
+      p5.rect(p5.width / 2, p5.height / 2, p5.width, p5.height);
+
+      // Draw center circle and large, primary direction inner and outer circles
+      drawPattern(p5, p5.width / 2, p5.height / 2, p5.width);
+
+      let mySize = 200;
+
+      // Create smaller circles in a grid
+      for (let x = 0; x <= p5.width; x += mySize) {
+        for (let y = 0; y <= p5.height; y += mySize) {
+          drawPattern(p5, x, y, mySize);
+        }
+      }
+
+      for (let iter = 0; iter < 2; iter++) {
+        mySize /= 2;
+
+        for (let x = 0; x <= p5.width; x += mySize) {
+          for (let y = 0; y <= p5.height; y += mySize) {
+            if (p5.random(0, 1) > 0.5) {
+              drawPattern(p5, x, y, mySize);
+            }
+          }
+        }
+      }
+    };
   };
 
   return (
+    // TODO: Add button to regenerate art
     <div ref={parentRef} className="h-full w-full">
       <ReactP5Wrapper sketch={mySketch} />
     </div>

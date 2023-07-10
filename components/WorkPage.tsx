@@ -1,26 +1,58 @@
 import { ReactNode } from "react";
-import { HeaderText2 } from "@/components/Header";
+import { HeaderText, HeaderText2 } from "@/components/Header";
 import { AiOutlineLink } from "react-icons/ai";
 
 const WorkPage = ({
-  url,
   companyName,
   jobAccomplishments,
+  url,
+  toolsUsed,
+  startDate,
+  endDate,
 }: {
-  url: string;
   companyName: string;
   jobAccomplishments: ReactNode;
-}) => (
-  <>
-    <a href={url} target="_blank" rel="noreferrer">
-      <HeaderText2 inline>{companyName}</HeaderText2>{" "}
-      <AiOutlineLink className="inline" />
-    </a>
+  startDate: Date;
+  url?: string;
+  toolsUsed?: string[];
+  endDate?: Date;
+}) => {
+  const WorkHeader = () => <HeaderText inline>{companyName}</HeaderText>;
 
-    <br />
-    <br />
-    <ul className="max-w-3xl">{jobAccomplishments}</ul>
-  </>
-);
+  const startDateString =
+    startDate.getMonth() + 1 + "/" + startDate.getFullYear();
+
+  const endDateString = endDate
+    ? endDate.getMonth() + 1 + "/" + endDate.getFullYear()
+    : "Current";
+
+  return (
+    <>
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer">
+          <WorkHeader /> <AiOutlineLink className="inline" />
+        </a>
+      ) : (
+        <WorkHeader />
+      )}
+
+      <div className="pb-6">
+        <HeaderText2>
+          {startDateString} - {endDateString}
+        </HeaderText2>
+      </div>
+
+      {toolsUsed && (
+        <div className="pb-6">
+          <HeaderText2>
+            <strong>Tools Used</strong> <span>{toolsUsed.join(", ")}</span>
+          </HeaderText2>
+        </div>
+      )}
+      <ul className="max-w-3xl">{jobAccomplishments}</ul>
+      <></>
+    </>
+  );
+};
 
 export default WorkPage;

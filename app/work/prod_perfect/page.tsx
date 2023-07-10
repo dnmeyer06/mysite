@@ -34,6 +34,8 @@ export default function ProdPerfect() {
           </li>
         </>
       }
+      startDate={new Date("November, 2019")}
+      endDate={new Date("August, 2022")}
     />
   );
 }
