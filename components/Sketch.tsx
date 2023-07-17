@@ -84,11 +84,11 @@ const MySketchComponent = () => {
       p5.arc(x, y + mySize / 2, mySize / 2, mySize / 2, p5.PI, 2 * p5.PI);
 
       // Draw randomly chosen square or circle in the middle
-      if (p5.random(0, 1) > 0.5) {
-        p5.circle(x, y, mySize / 4);
-      } else {
-        p5.square(x, y, mySize / 4);
-      }
+      // if (p5.random(0, 1) > 0.5) {
+      //   p5.circle(x, y, mySize / 4);
+      // } else {
+      p5.square(x, y, mySize / 4);
+      // }
 
       p5.fill(generateColor());
 
@@ -119,10 +119,10 @@ const MySketchComponent = () => {
       p5.arc(x, y + mySize / 2, mySize / 4, mySize / 4, p5.PI, 2 * p5.PI);
 
       // Randomly draw a cross in the middle
-      if (p5.random(0, 1) > 0.5) {
-        p5.line(x - mySize / 2, y - mySize / 2, x + mySize / 2, y + mySize / 2);
-        p5.line(x - mySize / 2, y + mySize / 2, x + mySize / 2, y - mySize / 2);
-      }
+      // if (p5.random(0, 1) > 0.5) {
+      //   p5.line(x - mySize / 2, y - mySize / 2, x + mySize / 2, y + mySize / 2);
+      //   p5.line(x - mySize / 2, y + mySize / 2, x + mySize / 2, y - mySize / 2);
+      // }
     };
 
     const generateColor = () => {
@@ -134,25 +134,25 @@ const MySketchComponent = () => {
       p5.rect(p5.width / 2, p5.height / 2, p5.width, p5.height);
 
       // Draw center circle and large, primary direction inner and outer circles
-      drawPattern(p5, p5.width / 2, p5.height / 2, p5.width);
+      // drawPattern(p5, p5.width / 2, p5.height / 2, p5.width);
 
       let mySize = 200;
 
       // Create smaller circles in a grid
-      for (let x = 0; x <= p5.width; x += mySize) {
-        for (let y = 0; y <= p5.height; y += mySize) {
-          drawPattern(p5, x, y, mySize);
-        }
-      }
+      // for (let x = 0; x <= p5.width; x += mySize) {
+      //   for (let y = 0; y <= p5.height; y += mySize) {
+      //     drawPattern(p5, x, y, mySize);
+      //   }
+      // }
 
       for (let iter = 0; iter < 2; iter++) {
         mySize /= 2;
 
         for (let x = 0; x <= p5.width; x += mySize) {
           for (let y = 0; y <= p5.height; y += mySize) {
-            if (p5.random(0, 1) > 0.5) {
-              drawPattern(p5, x, y, mySize);
-            }
+            // if (p5.random(0, 1) > 0.5) {
+            drawPattern(p5, x, y, mySize);
+            // }
           }
         }
       }

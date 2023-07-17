@@ -9,6 +9,7 @@ const WorkPage = ({
   toolsUsed,
   startDate,
   endDate,
+  summary,
 }: {
   companyName: string;
   jobAccomplishments: ReactNode;
@@ -16,6 +17,7 @@ const WorkPage = ({
   url?: string;
   toolsUsed?: string[];
   endDate?: Date;
+  summary?: string;
 }) => {
   const WorkHeader = () => <HeaderText inline>{companyName}</HeaderText>;
 
@@ -49,7 +51,12 @@ const WorkPage = ({
           </HeaderText2>
         </div>
       )}
-      <ul>{jobAccomplishments}</ul>
+      {!!summary && (
+        <div className="pb-6">
+          <p>{summary}</p>
+        </div>
+      )}
+      <ul className="pl-2.5">{jobAccomplishments}</ul>
     </div>
   );
 };

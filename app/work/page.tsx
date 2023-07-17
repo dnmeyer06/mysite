@@ -3,11 +3,11 @@ import shhh from "../../public/shhhh.png";
 import innerworldLogo from "../../public/innerworldLogo.png";
 import tackingNetZeroUI from "../../public/trackingNetZero.png";
 import prodPerfectoLogo from "../../public/prodPerfectLogo.png";
-// import refoldLogo from "../../public/refold.png";
+import refoldLogo from "../../public/refold.png";
 // import massMutualLogo from "../../public/massMutual.png";
 
 // Component imports
-import WorkTile from "@/components/WorkTile";
+import WorkTile from "@/components/WorkPageComponents/WorkTile";
 
 export default function Work() {
   return (
@@ -41,13 +41,13 @@ export default function Work() {
           title="ProdPerfect"
         />
 
-        {/* <WorkTile
+        <WorkTile
           link="work/refold"
           alt="Refold Logo"
           src={refoldLogo}
           title="Refold Languages"
         />
-
+        {/* 
         <WorkTile
           link="work/mass_mutual"
           alt="Mass Mutual Logo"
