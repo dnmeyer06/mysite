@@ -12,6 +12,10 @@ const DesktopNavigation = () => (
     </li>
     <li className="p-2">|</li>
     <li className="p-2 hover:underline">
+      <Link href="/animation">Animation Playground</Link>
+    </li>
+    <li className="p-2">|</li>
+    <li className="p-2 hover:underline">
       <Link href="/work">Professional Work</Link>
     </li>
     <li className="p-2">|</li>

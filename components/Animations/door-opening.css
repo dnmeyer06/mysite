@@ -1,0 +1,25 @@
+.outerPerspective {
+  perspective: 800px;
+}
+
+.outerPerspective:hover .door-left {
+  animation: openLeftDoor 1s forwards;
+  transform-origin: left;
+}
+
+.outerPerspective:hover .door-right {
+  animation: openRightDoor 1s forwards;
+  transform-origin: right;
+}
+
+
+/* Animations */
+@keyframes openLeftDoor {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-90deg); }
+}
+
+@keyframes openRightDoor {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(90deg); }
+}
